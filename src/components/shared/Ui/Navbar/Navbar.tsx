@@ -90,7 +90,7 @@ export default function Navbar() {
   const handleDropdownLeave = () => {
     dropdownTimeout.current = setTimeout(() => {
       setDesktopDropdown(null);
-    }, 120);
+    }, 40);
   };
 
   const toggleMobileExpanded = (name: string) => {
@@ -121,7 +121,7 @@ export default function Navbar() {
     <header
       className={`sticky top-0 z-50 w-full border-b border-border backdrop-blur transition-all duration-500 ${
         isScrolled
-          ? "shadow-xs bg-background backdrop-blur-sm"
+          ? "shadow-xs bg-deep-dark/90 backdrop-blur-sm"
           : "bg-background"
       }`}
       ref={navRef}

@@ -18,16 +18,16 @@
 
   /* Text Colors */
   .text-foreground {
-    @apply text-gray-900 dark:text-gray-100;
+    @apply text-gray-100;
   }
 
   .text-muted-foreground {
-    @apply text-gray-600 dark:text-gray-400;
+    @apply text-gray-400;
   }
 
   /* Backgrounds */
   .bg-muted {
-    @apply bg-gray-100 dark:bg-gray-800;
+    @apply bg-[#0f151d];
   }
 
   .bg-background {
@@ -36,14 +36,14 @@
 
   /* Borders */
   .border-muted {
-    @apply border-gray-700;
+    @apply border-[#212731];
   }
 
   .border-border {
     @apply border-gray-700;
   }
 
-  /* .section-space-for-shadow {
-    @apply py-4 px-[6px] md:px-3
-  } */
+  .text-gradient {
+    @apply bg-linear-to-r from-primary via-primary to-secondary bg-clip-text text-transparent
+  }
 }
