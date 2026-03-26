@@ -133,7 +133,7 @@ export function ContactSection() {
                 {
                   icon: Phone,
                   title: "Call",
-                  value: "+8801820897892",
+                  value: "+8801778119298",
                 },
                 {
                   icon: Mail,
