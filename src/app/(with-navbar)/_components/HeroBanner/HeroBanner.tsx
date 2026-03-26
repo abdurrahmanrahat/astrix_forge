@@ -92,7 +92,7 @@ export default function HeroBanner() {
               <span className="text-gradient">Automate</span> Your Business
             </h1>
 
-            <p className="text-muted-foreground mb-8 max-w-xl text-base leading-7 sm:text-[17px] 2xl:text-lg">
+            <p className="text-muted-foreground mb-8 max-w-xl text-base leading-[25px] sm:text-[17px] 2xl:text-lg">
               Astrix Forge is an AI automation agency that replaces manual
               workflows with intelligent systems — so your business scales
               without scaling your team.

@@ -1,6 +1,7 @@
 import HeroBanner from "./_components/HeroBanner/HeroBanner";
 import Stats from "./_components/Stats/Stats";
 import TeachMarquee from "./_components/TeachMarquee/TeachMarquee";
+import WhyChooseUs from "./_components/WhyChooseUs/WhyChooseUs";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <HeroBanner />
       <TeachMarquee />
       <Stats />
+      <WhyChooseUs />
     </div>
   );
 }
