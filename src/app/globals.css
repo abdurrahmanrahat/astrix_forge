@@ -1,5 +1,6 @@
 /* import others css files */
 @import url("../styles/animate-marquee.styles.css");
+@import url("../styles/gradient-border.styles.css");
 
 @import "tailwindcss";
 @import "tw-animate-css";
@@ -51,40 +52,4 @@
   }
 
 
-}
-
-/* ── Gradient Border Utility ── */
-.gradient-border {
-  position: relative;
-  border: 1px solid transparent;
-  background: hsl(var(--bg-background));
-  background: var(--bg-background, transparent);
-  background-clip: padding-box;
-}
-
-.gradient-border::before {
-  content: "";
-  position: absolute;
-  inset: -1px;
-  border-radius: inherit;
-
-  background: linear-gradient(135deg,
-      var(--color-primary),
-      var(--color-secondary));
-
-  -webkit-mask: linear-gradient(#fff 0 0) content-box,
-    linear-gradient(#fff 0 0);
-  mask: linear-gradient(#fff 0 0) content-box,
-    linear-gradient(#fff 0 0);
-
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-
-  padding: 1px;
-  opacity: 0.25;
-  transition: opacity 0.3s ease;
-}
-
-.gradient-border:hover::before {
-  opacity: 0.6;
 }

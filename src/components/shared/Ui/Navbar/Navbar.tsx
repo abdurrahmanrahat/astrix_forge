@@ -212,7 +212,7 @@ export default function Navbar() {
           {/* Desktop Actions */}
           <div className="hidden lg:flex items-center gap-3">
             <Link href="/contact">
-              <Button className="rounded-full px-5" size="lg">
+              <Button className="rounded-full px-5 h-10" size="lg">
                 Book a Call
               </Button>
             </Link>

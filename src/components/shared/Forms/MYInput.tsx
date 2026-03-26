@@ -1,15 +1,20 @@
 "use client";
 
-import { Input } from "@/components/ui/input";
 import { Controller, useFormContext } from "react-hook-form";
 
-type TMTInputProps = {
+type TMYInputProps = {
   name: string;
   type?: string;
   placeholder: string;
+  className?: string;
 };
 
-const MYInput = ({ name, type = "text", placeholder }: TMTInputProps) => {
+const MYInput = ({
+  name,
+  type = "text",
+  placeholder,
+  className,
+}: TMYInputProps) => {
   const {
     control,
     formState: { errors },
@@ -21,27 +26,25 @@ const MYInput = ({ name, type = "text", placeholder }: TMTInputProps) => {
         control={control}
         name={name}
         render={({ field }) => (
-          <Input
+          <input
             {...field}
             type={type}
             placeholder={placeholder ?? ""}
-            className={`h-11 px-4 rounded-md border ${
+            className={`w-full px-4 py-2 rounded-md border ${
               errors[name]
                 ? "border-red-500 dark:border-red-400"
-                : "border-gray-300 dark:border-gray-600"
+                : "border-muted"
             } 
                 text-gray-800 dark:text-gray-200 
                 placeholder-gray-400 dark:placeholder-gray-500
-                focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary
-                transition-all duration-200 ease-in-out
-                shadow-sm hover:border-gray-400 dark:hover:border-gray-500 bg-background dark:bg-gray-800
-                
+                focus:outline-none hover:border-primary focus:border-primary
+                transition-all duration-300 ease-in-out bg-background outline-none placeholder:text-sm 2xl:placeholder:text-base ${className}
               `}
           />
         )}
       />
       {errors[name] && (
-        <p className="text-red-500 text-sm mt-1">
+        <p className="text-red-600 text-sm 2xl:text-base mt-1">
           {(errors[name]?.message as string) || "Invalid input"}
         </p>
       )}

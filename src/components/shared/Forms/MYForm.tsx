@@ -1,34 +1,42 @@
 "use client";
 
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { zodResolver } from "@hookform/resolvers/zod";
-import { ReactNode } from "react";
+import { type ReactNode } from "react";
 import {
+  type DefaultValues,
+  type FieldValues,
   FormProvider,
-  SubmitHandler,
+  type Resolver,
+  type SubmitHandler,
   useForm,
-  UseFormProps,
 } from "react-hook-form";
-import { z, ZodTypeAny } from "zod";
+import { z } from "zod";
 
-type TFormProps<TSchema extends ZodTypeAny> = {
+// Take Zod's inferred type and make sure it satisfies FieldValues
+type TFormValues<TSchema extends z.ZodTypeAny> = z.infer<TSchema> & FieldValues;
+
+// Props typed based on that single source-of-truth type
+type TFormProps<TSchema extends z.ZodTypeAny> = {
   children: ReactNode;
-  onSubmit: SubmitHandler<z.infer<TSchema>>;
-  defaultValues: UseFormProps<z.infer<TSchema>>["defaultValues"];
   schema: TSchema;
+  onSubmit: SubmitHandler<TFormValues<TSchema>>;
+  defaultValues?: DefaultValues<TFormValues<TSchema>>;
 };
 
-const MYForm = <TSchema extends ZodTypeAny>({
+const MYForm = <TSchema extends z.ZodTypeAny>({
   children,
+  schema,
   onSubmit,
   defaultValues,
-  schema,
 }: TFormProps<TSchema>) => {
-  const methods = useForm<z.infer<TSchema>>({
+  const methods = useForm<TFormValues<TSchema>>({
     defaultValues,
-    resolver: zodResolver(schema),
+    // Cast because @hookform/resolvers typing is a bit stricter
+    resolver: zodResolver(schema as any) as Resolver<TFormValues<TSchema>>,
   });
 
-  const submit: SubmitHandler<z.infer<TSchema>> = (data) => {
+  const submit: SubmitHandler<TFormValues<TSchema>> = (data) => {
     onSubmit(data);
     methods.reset();
   };

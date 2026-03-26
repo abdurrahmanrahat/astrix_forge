@@ -15,7 +15,7 @@ export default function SectionTitle({
 }: TSectionTitleProps) {
   return (
     <div className={cn("space-y-1", className)}>
-      <div className="flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.25em] text-primary">
+      <div className="flex items-center gap-2 text-[11px] 2xl:text-sm font-semibold uppercase tracking-[0.25em] text-primary">
         <span className="w-5 h-[2px] bg-primary" />
         {subTitle}
       </div>
