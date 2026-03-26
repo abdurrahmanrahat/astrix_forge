@@ -11,7 +11,8 @@
   /* make it 100 - 900 variants for primary color */
   --color-primary: #D4483C;
   --color-secondary: #4488DD;
-  --color-deep-dark: #0f151d;
+  --color-deep-dark: #070707;
+  /* --color-deep-dark: #0f151d; */
 
   --shadow-cardLightShadow: rgba(100, 100, 111, 0.1) 0px 7px 29px 0px;
   --shadow-cardDarkShadow: rgba(0, 0, 0, 0.6) 0px 7px 29px 0px;
@@ -31,7 +32,7 @@
 
   /* Backgrounds */
   .bg-muted {
-    @apply bg-[#0e131a];
+    @apply bg-[#0a0a0a];
   }
 
   .bg-background {

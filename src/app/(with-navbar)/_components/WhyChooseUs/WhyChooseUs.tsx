@@ -114,27 +114,29 @@ export default function WhyChooseUs() {
           </div>
         </div>
 
-        <div className="mt-12 md:mt-14 rounded-xl border border-muted bg-background p-6  md:p-8">
-          <div className="mb-5 text-sm 2xl:text-base font-bold uppercase tracking-[0.18em] text-foreground">
-            Average Results Across Client Engagements
-          </div>
+        <div className="max-w-5xl mx-auto">
+          <div className="gradient-border mt-12 md:mt-14 rounded-xl bg-background p-6  md:p-8">
+            <div className="mb-5 text-sm 2xl:text-base font-bold uppercase tracking-[0.18em] text-foreground">
+              Average Results Across Client Engagements
+            </div>
 
-          <div className="space-y-0">
-            {metrics.map((item, index) => (
-              <div
-                key={item.name}
-                className={`flex flex-col gap-2 py-3 md:flex-row md:items-center md:justify-between ${
-                  index !== metrics.length - 1 ? "border-b border-muted" : ""
-                }`}
-              >
-                <span className="text-sm 2xl:text-base text-muted-foreground">
-                  {item.name}
-                </span>
-                <span className="text-sm 2xl:text-base font-extrabold text-primary">
-                  {item.value}
-                </span>
-              </div>
-            ))}
+            <div className="space-y-0">
+              {metrics.map((item, index) => (
+                <div
+                  key={item.name}
+                  className={`flex flex-col gap-2 py-3 md:flex-row md:items-center md:justify-between ${
+                    index !== metrics.length - 1 ? "border-b border-muted" : ""
+                  }`}
+                >
+                  <span className="text-sm 2xl:text-base text-muted-foreground">
+                    {item.name}
+                  </span>
+                  <span className="text-sm 2xl:text-base font-extrabold text-primary">
+                    {item.value}
+                  </span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </Container>
