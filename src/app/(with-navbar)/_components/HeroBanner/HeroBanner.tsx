@@ -134,7 +134,7 @@ export default function HeroBanner() {
           </div>
 
           <div className="relative mx-auto w-full max-w-[520px]">
-            <div className="rounded-[22px] border border-border bg-background/80 p-6 shadow-cardLightShadow backdrop-blur-xl dark:shadow-cardDarkShadow">
+            <div className="rounded-[22px] border border-muted bg-background/80 p-6 shadow-cardLightShadow backdrop-blur-xl dark:shadow-cardDarkShadow">
               <div className="mb-6 flex items-center justify-between">
                 <div className="flex gap-1.5">
                   <span className="h-2.5 w-2.5 rounded-full bg-[#ff5f57]" />
@@ -190,7 +190,7 @@ export default function HeroBanner() {
               <div className="flex flex-wrap items-center gap-2">
                 {workflow.map((step, index) => (
                   <div key={step} className="flex items-center gap-2">
-                    <div className="inline-flex items-center gap-2 rounded-lg border border-border bg-muted px-3 py-1.5 text-[11px] xl:text-[13px] font-semibold text-gray-200">
+                    <div className="inline-flex items-center gap-2 rounded-lg border border-muted bg-muted px-3 py-1.5 text-[11px] xl:text-[13px] font-semibold text-gray-200">
                       <span className="h-1.5 w-1.5 rounded-full bg-secondary" />
                       {step}
                     </div>

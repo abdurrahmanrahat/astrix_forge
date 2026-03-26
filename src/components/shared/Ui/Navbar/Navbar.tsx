@@ -119,7 +119,7 @@ export default function Navbar() {
 
   return (
     <header
-      className={`sticky top-0 z-50 w-full border-b border-border backdrop-blur transition-all duration-500 ${
+      className={`sticky top-0 z-50 w-full border-b border-muted backdrop-blur transition-all duration-500 ${
         isScrolled
           ? "shadow-xs bg-deep-dark/90 backdrop-blur-sm"
           : "bg-background"
@@ -186,7 +186,7 @@ export default function Navbar() {
                           duration: 0.22,
                           ease: [0.16, 1, 0.3, 1],
                         }}
-                        className="absolute left-1/2 top-full z-50 mt-0 w-64 -translate-x-1/2 overflow-hidden rounded-md border border-border bg-background shadow-md"
+                        className="absolute left-1/2 top-full z-50 mt-0 w-64 -translate-x-1/2 overflow-hidden rounded-md border border-muted bg-background shadow-md"
                         onMouseEnter={() => handleDropdownEnter(item.name)}
                         onMouseLeave={handleDropdownLeave}
                       >
@@ -244,7 +244,7 @@ export default function Navbar() {
             initial="closed"
             animate="open"
             exit="closed"
-            className="absolute top-full left-0 w-full overflow-hidden border-t border-border bg-background lg:hidden z-40 shadow-cardLightShadow dark:shadow-cardDarkShadow"
+            className="absolute top-full left-0 w-full overflow-hidden border-t border-muted bg-background lg:hidden z-40 shadow-cardLightShadow dark:shadow-cardDarkShadow"
           >
             <Container>
               <div className="py-4">
@@ -324,7 +324,7 @@ export default function Navbar() {
                   })}
                 </div>
 
-                <div className="mt-5 flex flex-col gap-3 border-t border-border pt-5">
+                <div className="mt-5 flex flex-col gap-3 border-t border-muted pt-5">
                   <Link href="/contact" onClick={closeMobileMenu}>
                     <Button className="rounded-full px-5" size="lg">
                       Book a Call
