@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} antialiased bg-white dark:bg-deep-dark text-white dark:text-black`}
+        className={`${inter.className} antialiased bg-deep-dark text-white`}
         suppressHydrationWarning
       >
         <Providers>

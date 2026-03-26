@@ -146,7 +146,7 @@ export default function HeroBanner() {
                 </span>
               </div>
 
-              <div className="mb-5 grid grid-cols-1 gap-3 sm:grid-cols-2">
+              <div className="mb-5 grid grid-cols-2 gap-1.5 md:gap-3">
                 {metrics.map((item) => (
                   <div
                     key={item.label}

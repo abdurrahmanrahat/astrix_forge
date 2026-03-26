@@ -15,7 +15,7 @@ const techStack = [
   "Tailwind CSS",
 ];
 
-export default function TechStrip() {
+export default function TeachMarquee() {
   const items = [...techStack, ...techStack];
 
   return (
