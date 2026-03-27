@@ -1,4 +1,5 @@
 /* import others css files */
+@import url("../styles/my-loader.styles.css");
 @import url("../styles/animate-marquee.styles.css");
 @import url("../styles/gradient-border.styles.css");
 

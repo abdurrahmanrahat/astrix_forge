@@ -6,6 +6,7 @@ import { ChevronDown, Menu, Scale, X } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import ActiveLink from "../ActiveLink";
 import Container from "../Container";
 
@@ -16,12 +17,15 @@ const navLinks = [
     name: "Services",
     href: "/services",
     children: [
-      { name: "Family Law", href: "/services/family-law" },
-      { name: "Personal Injury", href: "/services/personal-injury" },
-      { name: "Business Law", href: "/services/business-law" },
-      { name: "Criminal Law", href: "/services/criminal-law" },
-      { name: "Education Law", href: "/services/education-law" },
-      { name: "Real Estate Law", href: "/services/real-estate-law" },
+      {
+        name: "AI Automation Systems",
+        href: "/services/ai-automation-systems",
+      },
+      {
+        name: "AI Agents - Voice & LLM",
+        href: "/services/ai-agents-voice-and-llm",
+      },
+      { name: "Full-Stack Development", href: "/services/development" },
     ],
   },
   { name: "Pricing", href: "/pricing" },
@@ -68,6 +72,8 @@ export default function Navbar() {
   const [mobileExpanded, setMobileExpanded] = useState<string | null>(null);
   const [desktopDropdown, setDesktopDropdown] = useState<string | null>(null);
   const [isScrolled, setIsScrolled] = useState(false);
+
+  const pathname = usePathname();
 
   const dropdownTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
   const navRef = useRef<HTMLDivElement>(null);
@@ -165,7 +171,7 @@ export default function Navbar() {
                 >
                   <Link href={item.href}>
                     <button
-                      className={`inline-flex items-center gap-1 text-base 2xl:text-lg font-medium text-gray-100 transition-all duration-300 hover:text-primary dark:hover:text-primary cursor-pointer pl-3 pr-2 py-3`}
+                      className={`inline-flex items-center gap-1 text-base 2xl:text-lg font-medium transition-all duration-300 hover:text-primary dark:hover:text-primary cursor-pointer pl-3 pr-2 py-3 ${pathname.startsWith("/services") ? "text-primary" : "text-gray-100"}`}
                     >
                       <span>{item.name}</span>
                       <ChevronDown
@@ -268,7 +274,7 @@ export default function Navbar() {
                       <div key={index} className="">
                         <Link href={item.href}>
                           <button
-                            className="flex w-full items-center justify-between px-3 py-0 text-left text-base font-medium text-foreground"
+                            className={`flex w-full items-center justify-between px-3 py-0 text-left text-base font-medium  ${pathname.startsWith("/services") ? "text-primary" : "text-foreground"}`}
                             onClick={closeMobileMenu}
                           >
                             <span>{item.name}</span>

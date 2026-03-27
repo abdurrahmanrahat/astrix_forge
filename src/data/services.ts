@@ -3,7 +3,7 @@ import { Bot, Globe, Mic } from "lucide-react";
 
 export const services: TService[] = [
   {
-    slug: "ai-automation",
+    slug: "ai-automation-systems",
     icon: Bot,
     title: "AI Automation Systems",
     shortDescription:
@@ -72,7 +72,7 @@ export const services: TService[] = [
     relatedProjects: ["ai-business-automation", "crm-lead-nurture"],
   },
   {
-    slug: "ai-agents",
+    slug: "ai-agents-voice-and-llm",
     icon: Mic,
     title: "AI Agents - Voice & LLM",
     shortDescription: "24/7 intelligent operations without adding headcount.",
