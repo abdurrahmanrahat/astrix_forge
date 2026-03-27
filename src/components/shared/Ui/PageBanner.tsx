@@ -28,7 +28,7 @@ export default function PageBanner({
       </div>
 
       <Container className="relative z-10">
-        <div className="max-w-2xl">
+        <div className="max-w-[600px]">
           <SectionTitle
             subTitle={subTitle}
             title={title}
@@ -36,7 +36,7 @@ export default function PageBanner({
             className="space-y-2"
           />
 
-          <p className="mt-5 max-w-xl text-sm leading-[26px] text-muted-foreground md:text-base 2xl:text-lg">
+          <p className="mt-5  text-sm leading-[26px] text-muted-foreground md:text-base 2xl:text-lg">
             {description}
           </p>
         </div>
