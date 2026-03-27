@@ -14,10 +14,12 @@ const ServicesPage = () => {
       />
 
       <Container>
-        <div className="py-14 md:py-20 space-y-14 2xl:space-y-20">
-          {services.map((service) => (
-            <ServicePageCard key={service.slug} service={service} />
-          ))}
+        <div className="w-full md:w-[560px] mx-auto xl:w-full">
+          <div className="py-14 md:py-20 space-y-14 2xl:space-y-20">
+            {services.map((service) => (
+              <ServicePageCard key={service.slug} service={service} />
+            ))}
+          </div>
         </div>
       </Container>
     </div>

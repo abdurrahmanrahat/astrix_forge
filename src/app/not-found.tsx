@@ -1,65 +1,45 @@
+import Container from "@/components/shared/Ui/Container";
 import { Button } from "@/components/ui/button";
-import { BookOpenIcon, HomeIcon, MapIcon } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 const NotFoundPage = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-blue-50 to-white px-4">
-      <div className="w-full max-w-3xl mx-auto flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
-        {/* Illustration */}
-        <div className="relative w-full max-w-md h-64 sm:h-80">
-          <Image
-            src="https://i.ibb.co.com/4R4wSXzp/not-found-page.png"
-            alt="Lost in the wilderness"
-            fill
-            className="object-contain"
-            priority
-          />
-        </div>
+    <div>
+      <div className="flex items-center justify-center bg-background text-foreground py-14 md:py-20">
+        <Container>
+          <div className="w-full max-w-xl mx-auto text-center">
+            {/* Image */}
+            <div className="mb-8 flex justify-center">
+              <Image
+                src="/images/shared/404-image.png"
+                alt="404 Illustration"
+                width={340}
+                height={300}
+                className="w-full max-w-xs sm:max-w-sm object-contain"
+              />
+            </div>
 
-        {/* Content */}
-        <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
-          <div className="space-y-2 mb-6">
-            <h1 className="text-7xl font-bold text-primary">404</h1>
-            <h2 className="text-2xl font-semibold text-gray-800">
-              Page Not Found
-            </h2>
-            <p className="text-gray-600 max-w-md">
-              Looks like you&apos;ve ventured off the beaten path. The page
-              you&apos;re looking for has either moved or doesn&apos;t exist.
+            {/* Title */}
+            <h1 className="text-2xl sm:text-3xl font-semibold font-display mb-4">
+              Oops! Page Not Found!
+            </h1>
+
+            {/* Description */}
+            <p className="text-sm sm:text-base text-muted-foreground leading-relaxed max-w-md mx-auto mb-8">
+              We’re sorry, but the page you’re looking for doesn’t exist or may
+              have been moved. Please check the URL or return to the homepage.
             </p>
-          </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-            <Button
-              asChild
-              size="lg"
-              className="transition-all hover:scale-105"
-            >
-              <Link href="/">
-                <HomeIcon className="mr-2 h-4 w-4" />
-                Return Home
-              </Link>
-            </Button>
-            <Button
-              variant="outline"
-              asChild
-              size="lg"
-              className="transition-all hover:scale-105"
-            >
-              <Link href="/dashboard/user">
-                <BookOpenIcon className="mr-2 h-4 w-4" />
-                Go Profile
-              </Link>
-            </Button>
+            <Link href="/">
+              <Button size="lg" className="px-5">
+                <ArrowLeft className="w-5 h-5" />
+                Back to Home
+              </Button>
+            </Link>
           </div>
-
-          <div className="mt-8 text-sm text-gray-500 flex items-center">
-            <MapIcon className="h-4 w-4 mr-2" />
-            <span>Need directions? Try using the navigation menu above.</span>
-          </div>
-        </div>
+        </Container>
       </div>
     </div>
   );

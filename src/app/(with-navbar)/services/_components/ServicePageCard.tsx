@@ -56,7 +56,7 @@ const ServicePageCard = ({ service }: { service: TService }) => {
             What’s Included
           </h4>
 
-          <ul className="space-y-3 ">
+          <ul className="space-y-2 ">
             {service.features.map((feature, j) => (
               <li
                 key={j}
