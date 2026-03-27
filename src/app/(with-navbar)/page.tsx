@@ -1,5 +1,6 @@
 import { ContactSection } from "./_components/ContactSection/ContactSection";
 import HeroBanner from "./_components/HeroBanner/HeroBanner";
+import OurProcess from "./_components/OurProcess/OurProcess";
 import Stats from "./_components/Stats/Stats";
 import TeachMarquee from "./_components/TeachMarquee/TeachMarquee";
 import WhyChooseUs from "./_components/WhyChooseUs/WhyChooseUs";
@@ -11,6 +12,7 @@ export default function Home() {
       <TeachMarquee />
       <Stats />
       <WhyChooseUs />
+      <OurProcess />
       <ContactSection />
     </div>
   );
