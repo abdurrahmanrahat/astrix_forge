@@ -89,7 +89,7 @@ export default function WhyChooseUs() {
               return (
                 <div
                   key={item.title}
-                  className="group relative flex items-start gap-3.5 rounded-2xl gradient-border bg-background p-4 md:p-5 transition-all duration-300 hover:shadow-topUpShadow"
+                  className="group relative flex items-start gap-3.5 rounded-xl gradient-border bg-background p-4 md:p-5 transition-all duration-300 hover:shadow-topUpShadow"
                 >
                   {/* subtle gradient glow layer */}
                   {/* <div className="pointer-events-none absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition duration-300 bg-linear-to-r from-primary/5 via-transparent to-secondary/5" /> */}

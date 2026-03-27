@@ -30,7 +30,7 @@ const MYInput = ({
             {...field}
             type={type}
             placeholder={placeholder ?? ""}
-            className={`w-full px-4 py-2 rounded-md border ${
+            className={`w-full px-4 py-2 rounded-lg border ${
               errors[name]
                 ? "border-red-500 dark:border-red-400"
                 : "border-muted"

@@ -38,6 +38,10 @@ export default function DetailsPageBanner({
               Back to Services
             </Link>
 
+            {/* <div className="my-2 flex h-12 xl:h-14 w-12 xl:w-14 items-center justify-center rounded-lg border border-primary/20  bg-primary/10  transition-all duration-300 group-hover:border-primary/30">
+              <Icon className="h-5 w-5 xl:h-6 xl:w-6 text-primary" />
+            </div> */}
+
             <h2 className="text-[28px] md:text-4xl xl:text-5xl 2xl:text-[54px] font-heading font-bold text-foreground leading-[1.1] tracking-tight">
               {title}{" "}
               {highlight && (

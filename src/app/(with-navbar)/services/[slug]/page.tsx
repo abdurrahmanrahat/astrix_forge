@@ -1,6 +1,9 @@
 import { DataNotFound } from "@/components/shared/Ui/Data/DataNotFound";
 import DetailsPageBanner from "@/components/shared/Ui/DetailsPageBanner";
 import { getServiceBySlug } from "@/data/services";
+import DetailsOverview from "./_components/DetailsOverview";
+import ServiceFit from "./_components/ServiceFit";
+import Solution from "./_components/Solution";
 
 const ServiceDetailsPage = async (props: {
   params: Promise<{ slug: string }>;
@@ -19,6 +22,10 @@ const ServiceDetailsPage = async (props: {
             // highlight=""
             description={service.shortDescription}
           />
+
+          <DetailsOverview service={service} />
+          <ServiceFit service={service} />
+          <Solution service={service} />
         </div>
       ) : (
         <DataNotFound

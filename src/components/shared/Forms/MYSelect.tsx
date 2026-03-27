@@ -39,7 +39,7 @@ const MYSelect = ({ name, options, placeholder }: TMYSelectProps) => {
             <SelectTrigger
               className={cn(
                 // Base style
-                "h-11 w-full cursor-pointer rounded-md text-sm transition-all duration-200 ease-in-out",
+                "h-11 w-full cursor-pointer rounded-lg text-sm transition-all duration-200 ease-in-out",
                 "text-foreground placeholder:text-muted-foreground text-gray-800 dark:text-gray-200",
                 "border focus:outline-none focus:ring-0",
                 "hover:border-primary focus:border-primary",
@@ -47,7 +47,7 @@ const MYSelect = ({ name, options, placeholder }: TMYSelectProps) => {
                 // Dynamic error border
                 error
                   ? "border-red-500 dark:border-red-400 focus:border-red-500"
-                  : "border-gray-200 dark:border-gray-700"
+                  : "border-gray-200 dark:border-gray-700",
               )}
             >
               <SelectValue placeholder={placeholder} />
@@ -63,7 +63,7 @@ const MYSelect = ({ name, options, placeholder }: TMYSelectProps) => {
                       className={cn(
                         "cursor-pointer text-sm transition-colors duration-200",
                         "hover:bg-primary/10 focus:bg-primary/10 focus:text-primary",
-                        "dark:hover:bg-primary/10 dark:focus:bg-primary/10"
+                        "dark:hover:bg-primary/10 dark:focus:bg-primary/10",
                       )}
                     >
                       {option.label}

@@ -68,7 +68,7 @@ export default function OurProcess() {
               return (
                 <div
                   key={step.title}
-                  className="gradient-border group relative rounded-md p-4 md:p-4 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-topUpShadow"
+                  className="gradient-border group relative rounded-lg p-4 md:p-4 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-topUpShadow"
                   style={{
                     transitionDelay: `${i * 0.07}s`,
                   }}

@@ -12,11 +12,14 @@ const quickLinks = [
 ];
 
 const serviceLinks = [
-  { name: "AI Automation Systems", href: "/services#automation-systems" },
-  { name: "AI Agents - Voice & LLM", href: "/services#ai-agents" },
-  { name: "Website Development", href: "/services#website-development" },
-  { name: "Workflow Integrations", href: "/services#workflow-integrations" },
-  { name: "CRM Automation", href: "/services#crm-automation" },
+  { name: "AI Automation Systems", href: "/services/ai-automation-systems" },
+  {
+    name: "AI Agents - Voice & LLM",
+    href: "/services/ai-agents-voice-and-llm",
+  },
+  { name: "Website Development", href: "/services/development" },
+  { name: "App Development", href: "/services/development" },
+  { name: "Workflow Integrations", href: "/services/ai-automation-systems" },
   // { name: "Custom Internal Tools", href: "/services#internal-tools" },
 ];
 

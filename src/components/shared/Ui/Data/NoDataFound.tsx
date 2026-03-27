@@ -29,7 +29,7 @@ export default function NoDataFound({
       {/* Optional action button */}
       <button
         onClick={() => window.location.reload()}
-        className="mt-6 px-5 py-2.5 text-sm font-medium bg-primary text-white rounded-md hover:bg-primary/90 transition cursor-pointer"
+        className="mt-6 px-5 py-2.5 text-sm font-medium bg-primary text-white rounded-lg hover:bg-primary/90 transition cursor-pointer"
       >
         পৃষ্ঠা রিফ্রেশ করুন
       </button>

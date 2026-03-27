@@ -16,7 +16,7 @@ export default function TestimonialCard({
   testimonial: TTestimonialCardProps;
 }) {
   return (
-    <div className="gradient-border group relative rounded-md p-5 xl:p-6 transition-all duration-300 hover:shadow-topUpShadow">
+    <div className="gradient-border group relative rounded-lg p-5 xl:p-6 transition-all duration-300 hover:shadow-topUpShadow">
       {/* rating */}
       <div className="mb-2 flex items-center gap-1 text-amber-400">
         {Array.from({ length: testimonial.rating }).map((_, i) => (

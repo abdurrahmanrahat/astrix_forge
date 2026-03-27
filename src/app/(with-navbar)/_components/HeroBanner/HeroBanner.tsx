@@ -134,7 +134,7 @@ export default function HeroBanner() {
           </div>
 
           <div className="relative mx-auto w-full max-w-[520px]">
-            <div className="rounded-[22px] border border-muted bg-background/80 p-6 shadow-cardLightShadow backdrop-blur-xl dark:shadow-cardDarkShadow">
+            <div className="rounded-[20px] border border-muted bg-background/80 p-6 shadow-cardLightShadow backdrop-blur-xl dark:shadow-cardDarkShadow">
               <div className="mb-6 flex items-center justify-between">
                 <div className="flex gap-1.5">
                   <span className="h-2.5 w-2.5 rounded-full bg-[#ff5f57]" />
@@ -150,7 +150,7 @@ export default function HeroBanner() {
                 {metrics.map((item) => (
                   <div
                     key={item.label}
-                    className="rounded-2xl border border-muted bg-muted p-4"
+                    className="rounded-xl border border-muted bg-muted p-4"
                   >
                     <div className="text-muted-foreground mb-0.5 text-[11px] 2xl:text-[13px]">
                       {item.label}
@@ -204,7 +204,7 @@ export default function HeroBanner() {
               </div>
             </div>
 
-            <div className="absolute -right-3 -top-4 rounded-2xl border border-muted bg-background px-4 py-3 shadow-topUpShadow backdrop-[4px]">
+            <div className="absolute -right-3 -top-4 rounded-xl border border-muted bg-background px-4 py-3 shadow-topUpShadow backdrop-[4px]">
               <div className="text-muted-foreground mb-1 text-[10px] 2xl:text-[12px] tracking-[0.3px]">
                 Daily Automations
               </div>
@@ -216,7 +216,7 @@ export default function HeroBanner() {
               </div>
             </div>
 
-            <div className="absolute -bottom-3 -left-3 rounded-2xl border border-muted bg-background px-4 py-3 shadow-topUpShadow backdrop-[4px]">
+            <div className="absolute -bottom-3 -left-3 rounded-xl border border-muted bg-background px-4 py-3 shadow-topUpShadow backdrop-[4px]">
               <div className="text-muted-foreground mb-1 text-[10px] 2xl:text-[12px] tracking-[0.3px]">
                 Avg. Response Time
               </div>

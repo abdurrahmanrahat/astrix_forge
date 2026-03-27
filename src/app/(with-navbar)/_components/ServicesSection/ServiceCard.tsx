@@ -6,7 +6,7 @@ export default function ServiceCard({ service }: { service: TService }) {
   const Icon = service.icon;
 
   return (
-    <div className="gradient-border group flex h-full flex-col rounded-md py-8 p-5 md:px-6  transition-all duration-300 hover:shadow-topUpShadow">
+    <div className="gradient-border group flex h-full flex-col rounded-lg py-8 p-5 md:px-6  transition-all duration-300 hover:shadow-topUpShadow">
       <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl border border-primary/20 bg-linear-to-br from-primary/10 to-secondary/10 transition-all duration-300 group-hover:border-primary/30 group-hover:from-primary/15 group-hover:to-secondary/15">
         <Icon className="h-5 w-5 text-primary" />
       </div>
@@ -23,7 +23,7 @@ export default function ServiceCard({ service }: { service: TService }) {
         {service.tools.slice(0, 4).map((tool) => (
           <span
             key={tool}
-            className="rounded-md border border-muted bg-muted px-2.5 py-1 text-[10px] xl:text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground"
+            className="rounded-lg border border-muted bg-muted px-2.5 py-1 text-[10px] xl:text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground"
           >
             {tool}
           </span>

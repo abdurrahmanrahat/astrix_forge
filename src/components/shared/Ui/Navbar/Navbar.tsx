@@ -136,7 +136,7 @@ export default function Navbar() {
         <div className="flex h-16 xl:h-18 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-9 h-9 2xl:w-10 2xl:h-10 rounded-md bg-primary flex items-center justify-center">
+            <div className="w-9 h-9 2xl:w-10 2xl:h-10 rounded-lg bg-primary flex items-center justify-center">
               <Scale className="w-5 h-5 2xl:w-6 2xl:h-6 text-primary-foreground" />
             </div>
             <span
@@ -192,7 +192,7 @@ export default function Navbar() {
                           duration: 0.22,
                           ease: [0.16, 1, 0.3, 1],
                         }}
-                        className="absolute left-1/2 top-full z-50 mt-0 w-64 -translate-x-1/2 overflow-hidden rounded-md border border-muted bg-background shadow-md"
+                        className="absolute left-1/2 top-full z-50 mt-0 w-64 -translate-x-1/2 overflow-hidden rounded-lg border border-muted bg-background shadow-md"
                         onMouseEnter={() => handleDropdownEnter(item.name)}
                         onMouseLeave={handleDropdownLeave}
                       >
@@ -262,7 +262,7 @@ export default function Navbar() {
                           <ActiveLink
                             href={item.href}
                             exact={item.href === "/"}
-                            className="block rounded-md px-3 py-2 text-base"
+                            className="block rounded-lg px-3 py-2 text-base"
                           >
                             {item.name}
                           </ActiveLink>

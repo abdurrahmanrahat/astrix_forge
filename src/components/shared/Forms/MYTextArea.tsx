@@ -27,7 +27,7 @@ const MYTextArea = ({
           <textarea
             {...field}
             placeholder={placeholder}
-            className={`w-full min-h-[80px] px-4 py-2 rounded-md border resize-none
+            className={`w-full min-h-[80px] px-4 py-2 rounded-lg border resize-none
             ${
               errors[name]
                 ? "border-red-500 dark:border-red-400"

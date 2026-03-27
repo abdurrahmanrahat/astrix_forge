@@ -32,7 +32,7 @@ const ServicePageCard = ({ service }: { service: TService }) => {
           {service.tools.map((tool) => (
             <span
               key={tool}
-              className="rounded-md border border-muted bg-muted px-2.5 py-1 text-[10px] xl:text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground"
+              className="rounded-lg border border-muted bg-muted px-2.5 py-1 text-[10px] xl:text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground"
             >
               {tool}
             </span>
@@ -50,8 +50,8 @@ const ServicePageCard = ({ service }: { service: TService }) => {
       </div>
 
       {/* RIGHT (Features Card) */}
-      <div className="gradient-border rounded-md ">
-        <div className="bg-muted p-6 md:p-7 rounded-md">
+      <div className="gradient-border rounded-lg ">
+        <div className="bg-muted p-6 md:p-7 rounded-lg">
           <h4 className="mb-5 text-sm md:text-base font-semibold uppercase tracking-[0.18em] text-muted-foreground">
             What’s Included
           </h4>

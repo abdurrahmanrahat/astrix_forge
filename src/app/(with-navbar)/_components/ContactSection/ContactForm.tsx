@@ -108,7 +108,7 @@ const ContactForm = () => {
               <MYInput
                 name="name"
                 placeholder="Enter your full name"
-                className="h-11 rounded-md border-muted bg-muted text-foreground placeholder:text-muted-foreground focus-visible:ring-0 2xl:h-12"
+                className="h-11 rounded-lg border-muted bg-muted text-foreground placeholder:text-muted-foreground focus-visible:ring-0 2xl:h-12"
               />
             </div>
 
@@ -122,7 +122,7 @@ const ContactForm = () => {
               <MYInput
                 name="phone"
                 placeholder="Enter your whatsapp number"
-                className="h-11 rounded-md border-muted bg-muted text-foreground placeholder:text-muted-foreground focus-visible:ring-0 2xl:h-12"
+                className="h-11 rounded-lg border-muted bg-muted text-foreground placeholder:text-muted-foreground focus-visible:ring-0 2xl:h-12"
               />
             </div>
 
@@ -137,7 +137,7 @@ const ContactForm = () => {
                 name="email"
                 type="email"
                 placeholder="Enter your email"
-                className="h-11 rounded-md border-muted bg-muted text-foreground placeholder:text-muted-foreground focus-visible:ring-0 2xl:h-12"
+                className="h-11 rounded-lg border-muted bg-muted text-foreground placeholder:text-muted-foreground focus-visible:ring-0 2xl:h-12"
               />
             </div>
 
@@ -153,7 +153,7 @@ const ContactForm = () => {
               <MYTextArea
                 name="message"
                 placeholder="Tell us about your business, current bottlenecks, and what you'd like to automate or build..."
-                className="min-h-[110px] resize-none rounded-md border-muted bg-muted text-foreground placeholder:text-muted-foreground focus-visible:ring-0 2xl:min-h-[120px]"
+                className="min-h-[110px] resize-none rounded-lg border-muted bg-muted text-foreground placeholder:text-muted-foreground focus-visible:ring-0 2xl:min-h-[120px]"
               />
             </div>
 
@@ -207,7 +207,7 @@ function ServiceTypeField() {
               id="serviceType"
               value={field.value}
               onChange={field.onChange}
-              className="h-11 w-full appearance-none rounded-md border border-muted bg-muted px-4 pr-10 text-sm 2xl:text-base text-foreground outline-none transition-all duration-300 focus:border-primary cursor-pointer 2xl:h-12 "
+              className="h-11 w-full appearance-none rounded-lg border border-muted bg-muted px-4 pr-10 text-sm 2xl:text-base text-foreground outline-none transition-all duration-300 focus:border-primary cursor-pointer 2xl:h-12 "
             >
               {serviceTypes.map((type) => (
                 <option
