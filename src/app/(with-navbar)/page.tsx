@@ -1,6 +1,7 @@
 import { ContactSection } from "./_components/ContactSection/ContactSection";
 import HeroBanner from "./_components/HeroBanner/HeroBanner";
 import OurProcess from "./_components/OurProcess/OurProcess";
+import ServicesSection from "./_components/ServicesSection/ServicesSection";
 import Stats from "./_components/Stats/Stats";
 import TeachMarquee from "./_components/TeachMarquee/TeachMarquee";
 import TestimonialsSection from "./_components/TestimonialsSection/TestimonialsSection";
@@ -13,6 +14,7 @@ export default function Home() {
       <TeachMarquee />
       <Stats />
       <WhyChooseUs />
+      <ServicesSection />
       <OurProcess />
       <ContactSection />
       <TestimonialsSection />
