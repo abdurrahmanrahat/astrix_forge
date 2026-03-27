@@ -42,7 +42,7 @@ export default function HeroBanner() {
     { label: "Response Accuracy", value: 94 },
   ];
 
-  const workflow = ["Trigger", "AI Agent", "n8n", "CRM"];
+  const workflows = ["Trigger", "AI Agent", "n8n", "CRM"];
 
   return (
     <section className="relative overflow-hidden bg-background py-14 md:py-20">
@@ -94,7 +94,7 @@ export default function HeroBanner() {
 
             <p className="text-muted-foreground mb-8 max-w-xl text-base leading-[25px] sm:text-[17px] 2xl:text-lg">
               Astrix Forge is an AI automation agency that replaces manual
-              workflows with intelligent systems — so your business scales
+              workflows with intelligent systems - so your business scales
               without scaling your team.
             </p>
 
@@ -187,14 +187,14 @@ export default function HeroBanner() {
                 ))}
               </div>
 
-              <div className="flex flex-wrap items-center gap-2">
-                {workflow.map((step, index) => (
-                  <div key={step} className="flex items-center gap-2">
-                    <div className="inline-flex items-center gap-2 rounded-lg border border-muted bg-muted px-3 py-1.5 text-[11px] xl:text-[13px] font-semibold text-gray-200">
+              <div className="flex flex-wrap items-center gap-1 md:gap-2">
+                {workflows.map((step, index) => (
+                  <div key={step} className="flex items-center gap-1 md:gap-2">
+                    <div className="inline-flex items-center gap-1.5 md:gap-2 rounded-lg border border-muted bg-muted px-3 py-1.5 text-[11px] xl:text-[13px] font-semibold text-gray-200">
                       <span className="h-1.5 w-1.5 rounded-full bg-secondary" />
                       {step}
                     </div>
-                    {index < workflow.length - 1 && (
+                    {index < workflows.length - 1 && (
                       <span className="text-xs 2xl:text-sm text-gray-500">
                         →
                       </span>

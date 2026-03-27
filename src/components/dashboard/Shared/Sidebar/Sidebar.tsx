@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { SidebarItem } from "./Sidebar.helpers";
 import { adminSidebarItems, userSidebarItems } from "./sidebar.utils";
@@ -10,10 +11,18 @@ const Sidebar = ({ role }: { role: "user" | "admin" }) => {
       <div className="py-10 mx-4">
         {/* logo section */}
         <div className="flex justify-center items-center">
-          <Link href="/">
-            {/* <Image src={IMAGES.shared.Logo} alt="Logo" /> */}
-            <h2 className="text-xl font-semibold">Brand Logo</h2>
-          </Link>
+          <div className="w-[110px] md:w-[130px] xl:w-[140px] h-auto">
+            <Link href="/">
+              <Image
+                src="/images/shared/logo.png"
+                alt="astrix_forge"
+                width={140}
+                height={60}
+                className="w-full h-auto"
+                priority
+              />
+            </Link>
+          </div>
         </div>
 
         {/* Nav items section */}

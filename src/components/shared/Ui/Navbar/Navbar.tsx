@@ -2,9 +2,10 @@
 
 import { Button } from "@/components/ui/button";
 import { AnimatePresence, motion } from "framer-motion";
-import { ChevronDown, Menu, Scale, X } from "lucide-react";
+import { ChevronDown, Menu, X } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import ActiveLink from "../ActiveLink";
@@ -28,7 +29,6 @@ const navLinks = [
       { name: "Full-Stack Development", href: "/services/development" },
     ],
   },
-  { name: "Pricing", href: "/pricing" },
   { name: "Projects", href: "/projects" },
   { name: "Contact", href: "/contact" },
 ];
@@ -135,16 +135,18 @@ export default function Navbar() {
       <Container>
         <div className="flex h-16 xl:h-18 items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-9 h-9 2xl:w-10 2xl:h-10 rounded-lg bg-primary flex items-center justify-center">
-              <Scale className="w-5 h-5 2xl:w-6 2xl:h-6 text-primary-foreground" />
-            </div>
-            <span
-              className={`font-display text-xl 2xl:text-2xl font-semibold transition-colors text-white`}
-            >
-              AForge<span className="text-primary">.</span>
-            </span>
-          </Link>
+          <div className="w-[110px] md:w-[130px] xl:w-[140px] h-auto">
+            <Link href="/">
+              <Image
+                src="/images/shared/logo.png"
+                alt="astrix_forge"
+                width={140}
+                height={60}
+                className="w-full h-auto"
+                priority
+              />
+            </Link>
+          </div>
 
           {/* Desktop Nav */}
           <nav className="hidden lg:flex items-center gap-2 2xl:gap-3">
@@ -233,9 +235,9 @@ export default function Navbar() {
               className={`text-white`}
             >
               {isMobileOpen ? (
-                <X className="h-5 w-5" />
+                <X className="h-6 w-6" />
               ) : (
-                <Menu className="h-5 w-5" />
+                <Menu className="h-6 w-6" />
               )}
             </span>
           </div>

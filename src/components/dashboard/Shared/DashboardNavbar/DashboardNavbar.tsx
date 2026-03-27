@@ -1,6 +1,7 @@
 "use client";
 
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ReactNode, useEffect, useState } from "react";
@@ -51,12 +52,16 @@ export default function DashboardNavbar({
       <div className="w-full border-b border-gray-200 dark:border-gray-700 lg:border-none">
         <div className="lg:hidden">
           <div className="w-[90%] mx-auto flex justify-between items-center py-4">
-            <div>
+            <div className="w-[110px] md:w-[130px] xl:w-[140px] h-auto">
               <Link href="/">
-                {/* <Image src={IMAGES.shared.Logo} alt="Logo" /> */}
-                <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100">
-                  Brand Logo
-                </h2>
+                <Image
+                  src="/images/shared/logo.png"
+                  alt="astrix_forge"
+                  width={140}
+                  height={60}
+                  className="w-full h-auto"
+                  priority
+                />
               </Link>
             </div>
 
@@ -78,12 +83,18 @@ export default function DashboardNavbar({
         >
           {/* Logo */}
           <div className="my-[12px] flex justify-center items-center">
-            <Link href="/">
-              {/* <Image src={IMAGES.shared.Logo} alt="Logo" /> */}
-              <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100">
-                Brand Logo
-              </h2>
-            </Link>
+            <div className="w-[110px] md:w-[130px] xl:w-[140px] h-auto">
+              <Link href="/">
+                <Image
+                  src="/images/shared/logo.png"
+                  alt="astrix_forge"
+                  width={140}
+                  height={60}
+                  className="w-full h-auto"
+                  priority
+                />
+              </Link>
+            </div>
           </div>
 
           {/* Mobile nav items */}

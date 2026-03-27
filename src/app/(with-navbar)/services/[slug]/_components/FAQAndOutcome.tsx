@@ -34,7 +34,7 @@ const FAQAndOutcome = ({ service }: { service: TService }) => {
                   <span className="mt-0.5 flex h-5 w-5 2xl:h-6 2xl:w-6 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
                     <Check className="h-3.5 w-3.5 2xl:h-4.5 2xl:w-4.5" />
                   </span>
-                  <span className="text-[13px] md:text-sm xl:text-[15px] 2xl:text-[17px]leading-6 text-muted-foreground">
+                  <span className="text-[13px] md:text-sm xl:text-[15px] 2xl:text-[17px] leading-5 text-muted-foreground">
                     {item}
                   </span>
                 </div>

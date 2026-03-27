@@ -60,7 +60,7 @@ const ServicePageCard = ({ service }: { service: TService }) => {
             {service.features.map((feature, j) => (
               <li
                 key={j}
-                className="flex items-start gap-3 text-[13px] md:text-sm 2xl:text-[15px] leading-6 text-muted-foreground"
+                className="flex items-start gap-3 text-[13px] md:text-sm 2xl:text-[15px] leading-5 text-muted-foreground"
               >
                 <Check className="h-4 w-4 text-primary mt-0.5 shrink-0" />
                 {feature}

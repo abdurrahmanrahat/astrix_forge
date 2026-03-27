@@ -1,5 +1,6 @@
 import Container from "@/components/shared/Ui/Container";
-import { ArrowUpRight, Bot, Mail, MapPin, Phone } from "lucide-react";
+import { ArrowUpRight, Mail, MapPin, Phone } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 const quickLinks = [
@@ -31,15 +32,18 @@ export default function Footer() {
           <div className="grid grid-cols-1 gap-10 md:grid-cols-2 xl:grid-cols-[1.2fr_0.8fr_1fr_1fr]">
             {/* Brand */}
             <div>
-              <Link href="/" className="group flex items-center gap-3">
-                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary text-white shadow-topUpShadow 2xl:h-11 2xl:w-11">
-                  <Bot className="h-5 w-5 2xl:h-6 2xl:w-6" />
-                </div>
-
-                <span className="font-heading text-xl font-semibold text-foreground transition-colors 2xl:text-2xl">
-                  Astrix Forge<span className="text-primary">.</span>
-                </span>
-              </Link>
+              <div className="w-[110px] md:w-[130px] xl:w-[140px] h-auto">
+                <Link href="/">
+                  <Image
+                    src="/images/shared/logo.png"
+                    alt="astrix_forge"
+                    width={140}
+                    height={60}
+                    className="w-full h-auto"
+                    priority
+                  />
+                </Link>
+              </div>
 
               <div className="mt-5 space-y-4">
                 <p className="max-w-md text-sm leading-6 text-muted-foreground 2xl:text-base">
