@@ -1,6 +1,6 @@
 import { LucideIcon } from "lucide-react";
 
-export type TServiceFAQ = {
+export type TFaq = {
   question: string;
   answer: string;
 };
@@ -18,7 +18,7 @@ export type TService = {
   solutionBreakdown: string[];
   outcomes: string[];
 
-  faq: TServiceFAQ[];
+  faq: TFaq[];
 
   tools: string[];
   relatedProjects: string[];
