@@ -200,3 +200,7 @@ export const services: TService[] = [
     relatedProjects: ["education-platform", "agency-cope", "e-commerce"],
   },
 ];
+
+export function getServiceBySlug(slug: string) {
+  return services.find((service) => service.slug === slug);
+}
