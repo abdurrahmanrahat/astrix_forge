@@ -1,7 +1,8 @@
 import Container from "@/components/shared/Ui/Container";
 import SectionTitle from "@/components/shared/Ui/SectionTitle";
-import { projects } from "@/data/projects";
-import ProjectCard from "./ProjectCard";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import ProjectLists from "./ProjectLists";
 
 export default function ProjectsSection() {
   return (
@@ -23,10 +24,18 @@ export default function ProjectsSection() {
         </div>
 
         {/* Grid */}
-        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-5 xl:gap-6">
-          {projects.slice(0, 3).map((project) => (
-            <ProjectCard key={project.slug} project={project} />
-          ))}
+        <ProjectLists />
+
+        <div className="flex justify-center items-center mt-8 ">
+          <Link href="/projects">
+            <Button
+              variant="outline"
+              size="lg"
+              className="rounded-full hover:-translate-y-0.5"
+            >
+              View Projects
+            </Button>
+          </Link>
         </div>
       </Container>
     </section>

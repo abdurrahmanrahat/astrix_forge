@@ -1,6 +1,4 @@
-import { cn } from "@/lib/utils";
 import { TProject } from "@/types/project.type";
-import { categoryStyles } from "@/utils/categoryStyles";
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -18,12 +16,13 @@ export default function ProjectCard({ project }: { project: TProject }) {
             src={project.thumbnail}
             alt={project.title}
             fill
-            className="object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            className="object-cover object-top transition-transform duration-500 group-hover:scale-[1.02]"
           />
 
           {/* <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/20 to-transparent" /> */}
 
-          <span
+          {/* <span
             className={cn(
               "absolute left-4 top-4 inline-flex rounded-full px-3 py-1 text-[10px] xl:text-[11px] font-semibold uppercase tracking-[0.14em] border",
               categoryStyles[project.category] ||
@@ -31,7 +30,7 @@ export default function ProjectCard({ project }: { project: TProject }) {
             )}
           >
             {project.category}
-          </span>
+          </span> */}
 
           <div className="absolute bottom-4 right-4 flex h-10 w-10 items-center justify-center rounded-full border border-muted bg-muted text-white backdrop-blur transition-all duration-300 group-hover:bg-primary group-hover:border-primary">
             <ArrowUpRight className="h-4 w-4" />

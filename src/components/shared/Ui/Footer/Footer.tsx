@@ -32,18 +32,16 @@ export default function Footer() {
           <div className="grid grid-cols-1 gap-10 md:grid-cols-2 xl:grid-cols-[1.2fr_0.8fr_1fr_1fr]">
             {/* Brand */}
             <div>
-              <div className="w-[130px] md:w-[140px] xl:w-[160px] h-auto">
-                <Link href="/">
-                  <Image
-                    src="/images/shared/logo.png"
-                    alt="astrix_forge"
-                    width={140}
-                    height={60}
-                    className="w-full h-auto"
-                    priority
-                  />
-                </Link>
-              </div>
+              <Link href="/">
+                <Image
+                  src="/images/shared/logo.png"
+                  alt="astrix_forge"
+                  width={160}
+                  height={60}
+                  className="h-10 md:h-11 xl:h-16 w-auto"
+                  priority
+                />
+              </Link>
 
               <div className="mt-5 space-y-4">
                 <p className="max-w-md text-sm leading-6 text-muted-foreground 2xl:text-[17px]">

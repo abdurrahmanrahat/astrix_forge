@@ -1,7 +1,6 @@
 import Container from "@/components/shared/Ui/Container";
 import PageBanner from "@/components/shared/Ui/PageBanner";
-import { projects } from "@/data/projects";
-import ProjectCard from "../_components/ProjectsSection/ProjectCard";
+import ProjectLists from "./_components/ProjectLists";
 
 const ProjectsPage = () => {
   return (
@@ -14,13 +13,7 @@ const ProjectsPage = () => {
       />
 
       <Container>
-        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-5 xl:gap-6">
-          <div className="py-14 md:py-20 space-y-14 2xl:space-y-20">
-            {projects.map((project) => (
-              <ProjectCard key={project.slug} project={project} />
-            ))}
-          </div>
-        </div>
+        <ProjectLists />
       </Container>
     </div>
   );

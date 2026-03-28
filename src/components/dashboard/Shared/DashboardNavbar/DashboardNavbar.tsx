@@ -52,18 +52,16 @@ export default function DashboardNavbar({
       <div className="w-full border-b border-gray-200 dark:border-gray-700 lg:border-none">
         <div className="lg:hidden">
           <div className="w-[90%] mx-auto flex justify-between items-center py-4">
-            <div className="w-[110px] md:w-[130px] xl:w-[140px] h-auto">
-              <Link href="/">
-                <Image
-                  src="/images/shared/logo.png"
-                  alt="astrix_forge"
-                  width={140}
-                  height={60}
-                  className="w-full h-auto"
-                  priority
-                />
-              </Link>
-            </div>
+            <Link href="/">
+              <Image
+                src="/images/shared/logo.png"
+                alt="astrix_forge"
+                width={160}
+                height={60}
+                className="h-10 md:h-11 xl:h-16 w-auto"
+                priority
+              />
+            </Link>
 
             <div
               onClick={handleNavToggle}
@@ -83,18 +81,16 @@ export default function DashboardNavbar({
         >
           {/* Logo */}
           <div className="my-[12px] flex justify-center items-center">
-            <div className="w-[110px] md:w-[130px] xl:w-[140px] h-auto">
-              <Link href="/">
-                <Image
-                  src="/images/shared/logo.png"
-                  alt="astrix_forge"
-                  width={140}
-                  height={60}
-                  className="w-full h-auto"
-                  priority
-                />
-              </Link>
-            </div>
+            <Link href="/">
+              <Image
+                src="/images/shared/logo.png"
+                alt="astrix_forge"
+                width={160}
+                height={60}
+                className="h-10 md:h-11 xl:h-16 w-auto"
+                priority
+              />
+            </Link>
           </div>
 
           {/* Mobile nav items */}

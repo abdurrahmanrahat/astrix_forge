@@ -43,7 +43,9 @@ const ProjectDetailsPage = async (props: {
                 {/* Main */}
                 <div>
                   {/* Demo */}
-                  <ProjectVideoDemo videoUrl={project.videoUrl} />
+                  {project?.videoUrl && (
+                    <ProjectVideoDemo videoUrl={project?.videoUrl} />
+                  )}
 
                   {/* Challenge */}
                   <ProjectChallenge challenge={project.challenge} />

@@ -24,11 +24,15 @@ const ProjectSidebar = ({ project }: { project: TProject }) => {
             </div>
           ))}
         </div>
-        <div className="flex justify-end px-3">
-          <Button variant="link" size="icon">
-            Live View
-          </Button>
-        </div>
+        {project?.liveUrl && (
+          <div className="flex justify-end px-3">
+            <Link href={project.liveUrl} target="_blank">
+              <Button variant="link" size="icon">
+                Live View
+              </Button>
+            </Link>
+          </div>
+        )}
       </div>
 
       <div className="gradient-border mb-5 rounded-2xl p-6">

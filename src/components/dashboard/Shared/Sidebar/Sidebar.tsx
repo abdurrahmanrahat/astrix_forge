@@ -11,18 +11,16 @@ const Sidebar = ({ role }: { role: "user" | "admin" }) => {
       <div className="py-10 mx-4">
         {/* logo section */}
         <div className="flex justify-center items-center">
-          <div className="w-[110px] md:w-[130px] xl:w-[140px] h-auto">
-            <Link href="/">
-              <Image
-                src="/images/shared/logo.png"
-                alt="astrix_forge"
-                width={140}
-                height={60}
-                className="w-full h-auto"
-                priority
-              />
-            </Link>
-          </div>
+          <Link href="/">
+            <Image
+              src="/images/shared/logo.png"
+              alt="astrix_forge"
+              width={160}
+              height={60}
+              className="h-10 md:h-11 xl:h-16 w-auto"
+              priority
+            />
+          </Link>
         </div>
 
         {/* Nav items section */}

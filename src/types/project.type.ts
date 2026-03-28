@@ -18,4 +18,5 @@ export type TProject = {
   result: string;
   meta: TProjectMeta;
   tools: string[];
+  liveUrl?: string;
 };
