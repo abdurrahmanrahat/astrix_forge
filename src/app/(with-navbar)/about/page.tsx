@@ -1,4 +1,5 @@
 import PageBanner from "@/components/shared/Ui/PageBanner";
+import AboutCTA from "./_components/AboutCTA";
 import OurStory from "./_components/OurStory";
 import OurTools from "./_components/OurTools";
 import OurValues from "./_components/OurValues";
@@ -15,6 +16,7 @@ const AboutPage = () => {
       <OurStory />
       <OurValues />
       <OurTools />
+      <AboutCTA />
     </div>
   );
 };
