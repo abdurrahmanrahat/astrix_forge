@@ -68,30 +68,32 @@ export default function OurProcess() {
               return (
                 <div
                   key={step.title}
-                  className="gradient-border group relative rounded-lg p-4 md:p-4 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-topUpShadow"
+                  className="gradient-border group relative rounded-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-topUpShadow"
                   style={{
                     transitionDelay: `${i * 0.07}s`,
                   }}
                 >
-                  {/* background number */}
-                  <div className="pointer-events-none absolute top-2 right-3 text-[40px] xl:text-[52px] 2xl:text-[64px] font-heading font-black text-white/5 leading-none">
-                    {step.number}
-                  </div>
+                  <div className="p-4 md:p-4 rounded-lg bg-muted">
+                    {/* background number */}
+                    <div className="pointer-events-none absolute top-2 right-3 text-[40px] xl:text-[52px] 2xl:text-[64px] font-heading font-black text-white/5 leading-none">
+                      {step.number}
+                    </div>
 
-                  {/* icon */}
-                  <div className="relative z-10 mb-2 flex h-11 w-11 items-center justify-center rounded-xl border border-primary/20 bg-gradient-to-br from-primary/10 to-secondary/10 text-primary">
-                    <Icon className="h-5 w-5" />
-                  </div>
+                    {/* icon */}
+                    <div className="relative z-10 mb-2 flex h-11 w-11 items-center justify-center rounded-xl border border-primary/20 bg-gradient-to-br from-primary/10 to-secondary/10 text-primary">
+                      <Icon className="h-5 w-5" />
+                    </div>
 
-                  {/* content */}
-                  <div className="relative z-10">
-                    <h3 className="mb-1 text-sm md:text-base 2xl:text-lg font-semibold text-foreground">
-                      {step.title}
-                    </h3>
+                    {/* content */}
+                    <div className="relative z-10">
+                      <h3 className="mb-1 text-sm md:text-base 2xl:text-lg font-semibold text-foreground">
+                        {step.title}
+                      </h3>
 
-                    <p className="text-[13px] md:text-sm 2xl:text-[15px] leading-[22px] text-muted-foreground">
-                      {step.description}
-                    </p>
+                      <p className="text-[13px] md:text-sm 2xl:text-[15px] leading-[22px] text-muted-foreground">
+                        {step.description}
+                      </p>
+                    </div>
                   </div>
                 </div>
               );

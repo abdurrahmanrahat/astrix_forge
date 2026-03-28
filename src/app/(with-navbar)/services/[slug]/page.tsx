@@ -23,6 +23,8 @@ const ServiceDetailsPage = async (props: {
             title={service.title}
             // highlight=""
             description={service.shortDescription}
+            backPage="Services"
+            backPageUrl="/services"
           />
 
           <DetailsOverview service={service} />

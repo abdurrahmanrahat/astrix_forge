@@ -32,7 +32,7 @@ export default function Footer() {
           <div className="grid grid-cols-1 gap-10 md:grid-cols-2 xl:grid-cols-[1.2fr_0.8fr_1fr_1fr]">
             {/* Brand */}
             <div>
-              <div className="w-[110px] md:w-[130px] xl:w-[140px] h-auto">
+              <div className="w-[130px] md:w-[140px] xl:w-[160px] h-auto">
                 <Link href="/">
                   <Image
                     src="/images/shared/logo.png"
@@ -46,7 +46,7 @@ export default function Footer() {
               </div>
 
               <div className="mt-5 space-y-4">
-                <p className="max-w-md text-sm leading-6 text-muted-foreground 2xl:text-base">
+                <p className="max-w-md text-sm leading-6 text-muted-foreground 2xl:text-[17px]">
                   We build AI automation systems, intelligent agents, and modern
                   digital products that help businesses scale operations without
                   scaling headcount.

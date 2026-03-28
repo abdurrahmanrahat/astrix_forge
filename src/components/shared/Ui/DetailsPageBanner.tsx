@@ -7,12 +7,16 @@ type TDetailsPageBannerProps = {
   title: string;
   highlight?: string;
   description: string;
+  backPage: string;
+  backPageUrl: string;
 };
 
 export default function DetailsPageBanner({
   title,
   highlight,
   description,
+  backPage,
+  backPageUrl,
 }: TDetailsPageBannerProps) {
   return (
     <section className="relative overflow-hidden border-b border-muted bg-background py-20 md:py-24 2xl:py-28">
@@ -28,14 +32,14 @@ export default function DetailsPageBanner({
       </div>
 
       <Container className="relative z-10">
-        <div className="max-w-[600px]">
+        <div className="max-w-[600px] 2xl:max-w-[650px]">
           <div className={cn("space-y-2")}>
             <Link
-              href="/services"
+              href={backPageUrl}
               className="inline-flex items-center gap-2 text-[11px] 2xl:text-sm font-semibold uppercase tracking-[0.15em] text-primary hover:text-primary/80 transition-all duration-300"
             >
               <ArrowLeft className="w-4 h-4" />
-              Back to Services
+              Back to {backPage}
             </Link>
 
             {/* <div className="my-2 flex h-12 xl:h-14 w-12 xl:w-14 items-center justify-center rounded-lg border border-primary/20  bg-primary/10  transition-all duration-300 group-hover:border-primary/30">
