@@ -190,3 +190,9 @@ export function getProjectsBySlugs(slugs: string[]) {
 
   return projects.filter((project) => slugSet.has(project.slug));
 }
+
+export function getProjectsByCategory(category: string, excludeSlug: string) {
+  return projects.filter(
+    (project) => project.category === category && project.slug !== excludeSlug,
+  );
+}

@@ -69,7 +69,7 @@ export const services: TService[] = [
       "Zapier",
       "Make",
     ],
-    relatedProjects: ["ai-business-automation", "crm-lead-nurture"],
+    relatedProjects: ["messenger-ai-agent", "website-ai-chat-agent"],
   },
   {
     slug: "ai-agents-voice-and-llm",
@@ -129,7 +129,7 @@ export const services: TService[] = [
       },
     ],
     tools: ["LangChain", "Voice AI", "LLM", "Custom Agents", "OpenAI", "RAG"],
-    relatedProjects: ["ai-mock-interview", "ai-business-automation"],
+    relatedProjects: [],
   },
   {
     slug: "development",
@@ -197,7 +197,12 @@ export const services: TService[] = [
       "MongoDB",
       "Tailwind CSS",
     ],
-    relatedProjects: ["education-platform", "agency-cope", "e-commerce"],
+    relatedProjects: [
+      "gadgetoria-hub",
+      "law-firm",
+      "aquavista-resort",
+      "agency-cope",
+    ],
   },
 ];
 

@@ -9,6 +9,7 @@ import ProjectImpact from "./_components/ProjectImpact";
 import ProjectSidebar from "./_components/ProjectSidebar";
 import ProjectSolution from "./_components/ProjectSolution";
 import ProjectVideoDemo from "./_components/ProjectVideoDemo";
+import RelatedProjects from "./_components/RelatedProjects";
 
 const ProjectDetailsPage = async (props: {
   params: Promise<{ slug: string }>;
@@ -65,6 +66,12 @@ const ProjectDetailsPage = async (props: {
                   <ProjectSidebar project={project} />
                 </div>
               </div>
+
+              {/* related projects */}
+              <RelatedProjects
+                category={project.category}
+                excludeSlug={project.slug}
+              />
             </Container>
           </section>
         </div>
