@@ -2,7 +2,7 @@ export function MyLoader() {
   return (
     <div className="relative flex items-center justify-center h-24 w-24">
       {/* Outer subtle ring */}
-      <div className="absolute inset-0 rounded-full border-2 border-border/60" />
+      <div className="absolute inset-0 rounded-full border-2 border-muted" />
 
       {/* Rotating arc segment */}
       <div

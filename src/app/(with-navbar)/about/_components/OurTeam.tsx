@@ -19,8 +19,8 @@ const teamMembers = [
   },
   {
     _id: "tm2",
-    name: "Daniel Brooks",
-    role: "Automation Engineer",
+    name: "MD. Sumon",
+    role: "Co-Founder",
     image: "/images/about/team/rahman.jpg",
     socials: {
       facebook: "#",
@@ -31,7 +31,7 @@ const teamMembers = [
   },
   {
     _id: "tm3",
-    name: "Sophia Bennett",
+    name: "Abdur Rahman",
     role: "Full Stack Developer",
     image: "/images/about/team/rahman.jpg",
     socials: {
