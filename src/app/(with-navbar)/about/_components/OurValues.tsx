@@ -59,7 +59,7 @@ export default function OurValues() {
             highlight="Different"
           />
 
-          <p className="mt-5 max-w-2xl text-sm leading-6 text-muted-foreground md:text-base 2xl:text-lg">
+          <p className="mt-4 max-w-2xl text-sm leading-6 text-muted-foreground md:text-base 2xl:text-lg">
             Not promises — principles we&apos;ve built every project around
             since day one.
           </p>
@@ -75,11 +75,11 @@ export default function OurValues() {
                 <item.icon className="h-5 w-5" />
               </div>
 
-              <h4 className="mb-2 text-sm font-semibold text-foreground md:text-[15px] 2xl:text-[17px]">
+              <h4 className="mb-2 text-sm font-semibold text-foreground md:text-[15px] xl:text-base 2xl:text-lg">
                 {item.title}
               </h4>
 
-              <p className="text-[13px] leading-[26px] text-muted-foreground md:text-sm 2xl:text-[15px]">
+              <p className="text-[13px] leading-[26px] text-muted-foreground md:text-sm 2xl:text-base">
                 {item.description}
               </p>
             </div>

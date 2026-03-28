@@ -53,7 +53,7 @@ export default function OurStory() {
               highlight="One Observation"
             />
 
-            <div className="mt-5 space-y-3">
+            <div className="mt-4 space-y-3">
               <p className="text-[14px] md:text-[15px] 2xl:text-[17px] leading-6 text-muted-foreground">
                 Most businesses are trapped in a loop. They hire people to do
                 tasks that could run automatically. Those people spend their

@@ -1,5 +1,6 @@
 import PageBanner from "@/components/shared/Ui/PageBanner";
 import OurStory from "./_components/OurStory";
+import OurTools from "./_components/OurTools";
 import OurValues from "./_components/OurValues";
 
 const AboutPage = () => {
@@ -13,6 +14,7 @@ const AboutPage = () => {
       />
       <OurStory />
       <OurValues />
+      <OurTools />
     </div>
   );
 };
