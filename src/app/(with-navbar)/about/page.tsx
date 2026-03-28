@@ -1,5 +1,6 @@
 import PageBanner from "@/components/shared/Ui/PageBanner";
 import OurStory from "./_components/OurStory";
+import OurValues from "./_components/OurValues";
 
 const AboutPage = () => {
   return (
@@ -11,6 +12,7 @@ const AboutPage = () => {
         description="Astrix Forge was founded on a simple belief: your business should run like a system, not depend on a person being available."
       />
       <OurStory />
+      <OurValues />
     </div>
   );
 };

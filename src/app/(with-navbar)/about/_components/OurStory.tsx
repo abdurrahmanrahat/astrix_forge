@@ -17,12 +17,7 @@ export default function OurStory() {
       <Container>
         <div className="grid grid-cols-1 items-start gap-10 lg:grid-cols-[0.95fr_1.05fr] xl:gap-16">
           {/* Left Visual */}
-          <div className="gradient-border rounded-lg p-6 md:p-8">
-            {/* <div className="mb-5 flex aspect-[1.5] items-center justify-center rounded-2xl border border-muted bg-gradient-to-br from-primary/10 to-secondary/10">
-              <div className="flex h-[90px] w-[90px] items-center justify-center rounded-[22px] bg-linear-to-br from-primary to-primary text-4xl font-black text-white shadow-topUpShadow md:h-[100px] md:w-[100px] md:text-[42px] 2xl:h-[110px] 2xl:w-[110px] 2xl:text-[46px] font-heading">
-                AF
-              </div>
-            </div> */}
+          <div className="gradient-border rounded-lg p-5 md:p-7">
             <div className="mb-4">
               <Image
                 src="/images/about/team.jpg"
@@ -56,7 +51,6 @@ export default function OurStory() {
               subTitle="Our Story"
               title="We Started With"
               highlight="One Observation"
-              className="space-y-2"
             />
 
             <div className="mt-5 space-y-3">
