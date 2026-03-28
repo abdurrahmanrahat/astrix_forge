@@ -28,7 +28,7 @@ export default function PageBanner({
       </div>
 
       <Container className="relative z-10">
-        <div className="max-w-[600px]">
+        <div className="max-w-[640px]">
           <SectionTitle
             subTitle={subTitle}
             title={title}

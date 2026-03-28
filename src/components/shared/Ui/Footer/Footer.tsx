@@ -28,7 +28,7 @@ export default function Footer() {
   return (
     <footer className="relative overflow-hidden border-t border-muted bg-background text-foreground">
       <Container>
-        <div className="relative z-10 pt-12 pb-6 md:pt-16 md:pb-10 2xl:pt-20 2xl:pb-12">
+        <div className="relative z-10 pt-12 pb-8 md:pt-16 md:pb-10 2xl:pt-20 2xl:pb-12">
           <div className="grid grid-cols-1 gap-10 md:grid-cols-2 xl:grid-cols-[1.2fr_0.8fr_1fr_1fr]">
             {/* Brand */}
             <div>

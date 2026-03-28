@@ -9,7 +9,7 @@ const ContactPage = () => {
         subTitle="Contact Us"
         title="Let's Talk About"
         highlight="What You Need"
-        description="Tell us your challenge. We'll respond within 24 hours with honest insight and a clear path forward — no sales pitch."
+        description="Tell us your challenge. We'll respond within 24 hours with honest insight and a clear path forward - no sales pitch."
       />
       <Schedule />
       <ContactSection />

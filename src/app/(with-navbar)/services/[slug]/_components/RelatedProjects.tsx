@@ -11,6 +11,7 @@ const RelatedProjects = ({
   relatedProjects: string[];
 }) => {
   const projects = getProjectsBySlugs(relatedProjects);
+
   return (
     <div className="py-14 md:py-20">
       <Container>
