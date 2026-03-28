@@ -15,7 +15,7 @@ const outcomes = [
     icon: Target,
     title: "Never Miss a Lead Again",
     description:
-      "Our AI systems respond to inbound leads in under 90 seconds — qualifying, tagging, and booking calls while your team sleeps.",
+      "Our AI systems respond to inbound leads in under 90 seconds - qualifying, tagging, and booking calls while your team sleeps.",
   },
   {
     icon: TrendingUp,
@@ -27,7 +27,7 @@ const outcomes = [
     icon: Zap,
     title: "Ship Digital Products That Perform",
     description:
-      "From idea to production-grade web application — built for scale, speed, and real business use from day one.",
+      "From idea to production-grade web application - built for scale, speed, and real business use from day one.",
   },
 ];
 
@@ -67,7 +67,7 @@ export default function WhyChooseUs() {
             />
 
             <p className="mt-5 mb-8 max-w-lg text-sm leading-6 text-muted-foreground sm:text-base">
-              The right systems don't just cut costs — they compound results,
+              The right systems don't just cut costs - they compound results,
               close bottlenecks, and free your people for what machines
               genuinely can't do.
             </p>

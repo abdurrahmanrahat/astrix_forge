@@ -51,7 +51,7 @@ export default function OurTools() {
           />
 
           <p className="mt-4 max-w-2xl text-sm leading-7 text-muted-foreground md:text-base 2xl:text-lg">
-            Production-tested platforms and frameworks — not sandbox
+            Production-tested platforms and frameworks - not sandbox
             experiments.
           </p>
         </div>

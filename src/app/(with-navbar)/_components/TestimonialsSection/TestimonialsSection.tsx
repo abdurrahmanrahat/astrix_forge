@@ -42,7 +42,7 @@ const testimonials = [
   {
     _id: "t4",
     quote:
-      "They didn’t just build tools — they built systems that actually run our operations. The automation workflows alone save us dozens of hours every week.",
+      "They didn’t just build tools - they built systems that actually run our operations. The automation workflows alone save us dozens of hours every week.",
     author: "Sophia Bennett",
     photo: "/images/testimonials/elizabeth.jpeg",
     role: "MD, Consulting Firm",

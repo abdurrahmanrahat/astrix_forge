@@ -57,21 +57,21 @@ export default function OurStory() {
               <p className="text-[14px] md:text-[15px] 2xl:text-[17px] leading-6 text-muted-foreground">
                 Most businesses are trapped in a loop. They hire people to do
                 tasks that could run automatically. Those people spend their
-                time on work that doesn&apos;t require human judgment — and the
+                time on work that doesn&apos;t require human judgment - and the
                 business can only grow as fast as it can hire.
               </p>
 
               <p className="text-[14px] md:text-[15px] 2xl:text-[17px] leading-6 text-muted-foreground">
                 Astrix Forge was founded to break that loop. We started as a
                 small team of engineers and automation specialists in Dhaka,
-                Bangladesh — and grew by delivering results that our clients
+                Bangladesh - and grew by delivering results that our clients
                 could measure in time saved, leads captured, and costs reduced.
               </p>
 
               <p className="text-[14px] md:text-[15px] 2xl:text-[17px] leading-6 text-muted-foreground">
                 Today, we combine three disciplines that most agencies separate:
                 AI automation, intelligent agent development, and full stack web
-                engineering. That combination is rare — and it&apos;s why our
+                engineering. That combination is rare - and it&apos;s why our
                 clients don&apos;t need to manage multiple vendors to get a
                 complete solution.
               </p>

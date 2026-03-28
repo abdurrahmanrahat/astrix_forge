@@ -9,7 +9,7 @@ export default function ProjectsSection() {
     <section className="py-14 md:py-20">
       <Container>
         {/* Title */}
-        <div className="mb-10 md:mb-14 max-w-2xl mx-auto text-center">
+        <div className="mb-8 md:mb-10 max-w-2xl mx-auto text-center">
           <SectionTitle
             subTitle="Selected Work"
             title="Projects That"
@@ -19,7 +19,7 @@ export default function ProjectsSection() {
 
           <p className="mt-4 text-sm md:text-base 2xl:text-lg text-muted-foreground leading-6">
             A curated selection of automation systems and web applications we've
-            built — each solving a real business challenge.
+            built - each solving a real business challenge.
           </p>
         </div>
 

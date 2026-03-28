@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function AboutCTA() {
   return (
-    <section className="py-14 md:py-20">
+    <section className="pb-14 md:pb-20">
       <Container>
         <div className="gradient-border rounded-[22px] text-center">
           <div className="px-6 py-10 md:px-10 md:py-14 rounded-[22px] bg-muted">

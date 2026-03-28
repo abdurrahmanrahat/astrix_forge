@@ -29,7 +29,7 @@ const processSteps = [
     icon: FlaskConical,
     title: "Test & Harden",
     description:
-      "Edge cases, failure modes, and stress testing — we make sure the system performs reliably before it touches your real operations.",
+      "Edge cases, failure modes, and stress testing - we make sure the system performs reliably before it touches your real operations.",
   },
   {
     number: "05",
@@ -42,7 +42,7 @@ const processSteps = [
 
 export default function OurProcess() {
   return (
-    <section className=" py-14 md:py-20">
+    <section className="">
       <Container>
         {/* Title */}
         <div className="mb-10 md:mb-14 max-w-xl mx-auto text-center">

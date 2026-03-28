@@ -31,7 +31,7 @@ export const values = [
   {
     title: "Transparent Process",
     description:
-      "You'll always know where your project stands. Weekly updates, clear milestones, and honest timelines — not vague progress reports.",
+      "You'll always know where your project stands. Weekly updates, clear milestones, and honest timelines - not vague progress reports.",
     icon: Eye,
   },
   {
@@ -60,7 +60,7 @@ export default function OurValues() {
           />
 
           <p className="mt-4 max-w-2xl text-sm leading-6 text-muted-foreground md:text-base 2xl:text-lg">
-            Not promises — principles we&apos;ve built every project around
+            Not promises - principles we&apos;ve built every project around
             since day one.
           </p>
         </div>

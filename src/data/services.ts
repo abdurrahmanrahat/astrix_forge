@@ -139,7 +139,7 @@ export const services: TService[] = [
     description:
       "Scalable, modern web platforms built with Next.js, React, and Node.js. From MVPs to production-grade applications with clean architecture, optimized performance, and responsive design.",
     features: [
-      "Modern tech stack — Next.js, React, Node.js, MongoDB",
+      "Modern tech stack - Next.js, React, Node.js, MongoDB",
       "Responsive design optimized for every device",
       "Secure authentication including Google & social sign-in",
       "Payment gateway integrations (Stripe, bKash, etc.)",
@@ -181,7 +181,7 @@ export const services: TService[] = [
       {
         question: "Can you build complex web applications?",
         answer:
-          "Absolutely. From dashboards to multi-role platforms with authentication and payments — I build production-grade applications.",
+          "Absolutely. From dashboards to multi-role platforms with authentication and payments - I build production-grade applications.",
       },
       {
         question: "What about hosting and deployment?",
