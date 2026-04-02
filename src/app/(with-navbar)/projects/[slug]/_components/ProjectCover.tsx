@@ -9,7 +9,7 @@ const ProjectCover = ({
 }) => {
   return (
     <div className="overflow-hidden rounded-lg">
-      <div className="relative aspect-video w-full bg-muted">
+      <div className="relative aspect-video max-w-[940px] mx-auto bg-muted">
         <Image
           src={thumbnail}
           alt={title}

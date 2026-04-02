@@ -2,17 +2,15 @@ const techStack = [
   "n8n",
   "GoHighLevel",
   "LangChain",
+  "Automated Workflows",
   "Zapier",
+  "Retell Ai",
   "ElevenLabs",
   "LLM Workflows",
-  "Pinecone",
+  "AI Agent Development",
+  "Website Development",
+  "MERN Stack",
   "Next.js",
-  "React",
-  "Node.js",
-  "Express.js",
-  "Mongoose",
-  "MongoDB",
-  "Tailwind CSS",
 ];
 
 export default function TeachMarquee() {

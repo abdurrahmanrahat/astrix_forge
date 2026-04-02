@@ -12,6 +12,7 @@ export type TProject = {
   summary: string;
   thumbnail: string;
   videoUrl?: string;
+  isVideoMobileRecording?: boolean;
   challenge: string;
   solution: string;
   features: string[];

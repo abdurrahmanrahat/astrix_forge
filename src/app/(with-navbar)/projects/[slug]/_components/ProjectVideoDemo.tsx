@@ -1,23 +1,30 @@
-import { Play } from "lucide-react";
+import Player from "next-video/player";
 import { SectionHeading } from "./SectionHeading";
 
-const ProjectVideoDemo = ({ videoUrl }: { videoUrl: string }) => {
+const ProjectVideoDemo = ({
+  videoUrl,
+  isVideoMobileRecording,
+}: {
+  videoUrl: string;
+  isVideoMobileRecording: boolean;
+}) => {
   return (
     <div className="mb-8">
       <SectionHeading title="Project Demo" className="mb-4" />
 
-      <a
-        href={videoUrl}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="group block"
+      <div
+        className={`${isVideoMobileRecording ? "aspect-9/16 max-w-[350px] mx-auto" : "aspect-video w-full"}  rounded-lg overflow-hidden`}
       >
-        <div className="gradient-border relative flex aspect-[16/9] items-center justify-center rounded-lg  bg-muted transition-all duration-300">
-          <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-white shadow-topUpShadow transition-transform duration-300 group-hover:scale-105">
-            <Play className="h-6 w-6 fill-white" />
-          </div>
-        </div>
-      </a>
+        <Player
+          src={videoUrl}
+          // poster="https://your-video-host.com/videos/demo-poster.webp"
+          playsInline
+          controls
+          autoPlay
+          muted
+          className="w-full h-full object-contain"
+        />
+      </div>
     </div>
   );
 };

@@ -45,7 +45,12 @@ const ProjectDetailsPage = async (props: {
                 <div>
                   {/* Demo */}
                   {project?.videoUrl && (
-                    <ProjectVideoDemo videoUrl={project?.videoUrl} />
+                    <ProjectVideoDemo
+                      videoUrl={project?.videoUrl}
+                      isVideoMobileRecording={
+                        project?.isVideoMobileRecording ? true : false
+                      }
+                    />
                   )}
 
                   {/* Challenge */}

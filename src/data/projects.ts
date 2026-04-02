@@ -7,8 +7,11 @@ export const projects = [
     summary:
       "AI-powered Messenger bot that handles customer inquiries, engages users in real-time conversations, and qualifies leads automatically.",
     thumbnail: "/images/projects/messenger-ai-agent.png",
+    // videoUrl:
+    //   "https://www.youtube.com/embed/_cWr288uXpQ?si=AHNt9Kgmd1KY6slI?autoplay=1",
     videoUrl:
-      "https://www.youtube.com/embed/_cWr288uXpQ?si=AHNt9Kgmd1KY6slI?autoplay=1",
+      "https://res.cloudinary.com/dpebdrnjf/video/upload/q_auto/f_auto/v1775137895/AI_Facebook_Messenger_Automation_Chatbot_-_final_vkptry.mp4",
+    isVideoMobileRecording: true,
     challenge:
       "Businesses were struggling to respond instantly to customer inquiries on Facebook, leading to missed opportunities, slow response times, and unqualified leads cluttering their pipeline.",
     solution:
@@ -68,7 +71,8 @@ export const projects = [
       "Smart website chat agent that engages visitors, answers questions, and captures qualified leads through real-time AI conversations.",
     thumbnail: "/images/projects/website-ai-agent.png",
     videoUrl:
-      "https://www.youtube.com/embed/MXdnaoT2kw4?si=c_DuV4eeBkaQ62KQ?autoplay=1",
+      "https://res.cloudinary.com/dpebdrnjf/video/upload/q_auto/f_auto/v1775137985/AI_Chat_Agent_for_Website_Leads_-_final_jkb4yn.mp4",
+    isVideoMobileRecording: true,
     challenge:
       "Websites often fail to engage visitors instantly, resulting in lost leads and missed opportunities due to delayed responses and lack of qualification systems.",
     solution:
@@ -157,7 +161,8 @@ export const projects = [
     summary:
       "Professional law firm website built to establish trust, explain legal services clearly, and drive consultation bookings.",
     thumbnail: "/images/projects/law-firm.png",
-    // videoUrl: "",
+    videoUrl:
+      "https://res.cloudinary.com/dpebdrnjf/video/upload/q_auto/f_auto/v1775137481/law-firm-demo_cfjm0k.mp4",
     challenge:
       "The firm needed a credible, premium-looking website that could communicate legal expertise, present services in a clear structure, and guide visitors toward booking consultations with confidence.",
     solution:
