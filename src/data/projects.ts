@@ -1,5 +1,147 @@
 export const projects = [
   {
+    _id: "660f1a2b3c4d5e6f7a8b9c06",
+    slug: "ai-voice-agent-booking-system",
+    title: "AI Voice Agent with Smart Booking, Lead Capture & Follow-up System",
+    category: "ai-agent",
+    summary:
+      "AI-powered voice automation system that answers customer queries, captures leads, books appointments, and triggers follow-up workflows automatically.",
+    thumbnail: "/images/projects/phychographic-ai-agent-cover.png",
+    videoUrl: "https://www.youtube.com/embed/EvwlgXQ5f-s?si=K8LSwOmhNQNIpn0U",
+    isVideoMobileRecording: false,
+    challenge:
+      "Businesses were losing leads and appointments because they could not respond to inquiries instantly, manage bookings efficiently, or follow up with prospects at the right time.",
+    solution:
+      "Developed an AI-powered voice agent system that handles customer conversations naturally, captures lead information, checks calendar availability in real time, books appointments automatically, and triggers confirmations, reminders, and follow-up workflows.",
+    features: [
+      "AI voice agent for real-time customer conversations",
+      "Instant lead capture with name, email, and interest details",
+      "Real-time appointment booking with Google Calendar",
+      "Support for rescheduling and cancellations",
+      "Automatic storage of lead and booking data in Google Sheets or CRM",
+      "Confirmation and reminder email automation",
+      "Follow-up workflow triggers for better conversion",
+    ],
+    result:
+      "The system helped businesses automate booking operations 24/7, reduce missed opportunities, streamline scheduling, and improve conversion rates through faster response and seamless customer experience.",
+    meta: {
+      type: "AI Automation",
+      industry: "Appointment Booking",
+      timeline: "1–2 weeks",
+    },
+    tools: [
+      "ElevenLabs",
+      "n8n",
+      "Google Calendar",
+      "Gmail",
+      "Google Sheets",
+      "Webhooks",
+      "API Integrations",
+      "AI",
+    ],
+  },
+  {
+    _id: "660f1a2b3c4d5e6f7a8b9c07",
+    slug: "ai-lead-generation-outreach-system",
+    title: "AI Lead Generation, Data Enrichment & Automated Outreach System",
+    category: "automation",
+    summary:
+      "Automated lead generation and outreach system that collects business leads, enriches data, generates personalized proposals with AI, and sends outreach emails automatically.",
+    thumbnail: "/images/projects/client-out-reached-cover.png",
+    videoUrl: "https://www.youtube.com/embed/UQRGxyv3OR0?si=eAoJLX452pbi13wp",
+    isVideoMobileRecording: false,
+    challenge:
+      "Manual lead generation and outreach were slowing business growth, consuming valuable time, and making it difficult to scale prospecting and proposal sending effectively.",
+    solution:
+      "Built an end-to-end outreach automation system that collects leads from Google Maps, cleans and structures the data, filters prospects based on email availability, stores them in a database or CRM, uses AI to generate personalized proposals, and sends automated outreach emails.",
+    features: [
+      "Automated lead collection from Google Maps",
+      "Lead data cleaning and structuring workflow",
+      "Filtering based on email availability",
+      "Storage in Google Sheets or CRM",
+      "AI-generated personalized proposals",
+      "Automated outreach email sending",
+      "Scalable outbound workflow with minimal manual work",
+    ],
+    result:
+      "The system enabled businesses to generate leads continuously, scale outreach without additional hiring, save hours of manual effort, improve lead targeting, and increase response rates with personalized communication.",
+    meta: {
+      type: "AI Automation",
+      industry: "Lead Generation",
+      timeline: "1–2 weeks",
+    },
+    tools: [
+      "n8n",
+      "Google Maps API",
+      "AI",
+      "Gmail",
+      "Workflow Automation",
+      "Structured Data Parsing",
+      "Google Sheets",
+      "CRM",
+    ],
+  },
+  {
+    _id: "660f1a2b3c4d5e6f7a8b9c03",
+    slug: "aquavista-resort",
+    title: "AquaVista Resort - Luxury Resort & Investment Website",
+    category: "website",
+    summary:
+      "High-end resort website designed to present lifestyle value, premium facilities, and ownership-driven investment opportunities.",
+    thumbnail: "/images/projects/aquavista.png",
+    // videoUrl: "",
+    challenge:
+      "The client needed a visually premium website that could balance luxury resort branding with persuasive investment messaging, while helping potential buyers understand facilities, ownership plans, and long-term value.",
+    solution:
+      "Created a polished multi-page website that highlights the resort’s riverside location, luxury amenities, rooftop experience, ownership plans, and inquiry paths through a conversion-focused content structure.",
+    features: [
+      "Luxury landing page with investment-focused messaging",
+      "Dedicated pages for facilities, rooftop, gallery, and ownership plans",
+      "Lead-generation sections placed across key pages",
+      "Visual storytelling for lifestyle and location value",
+      "Contact and consultation flow with map-based location access",
+    ],
+    result:
+      "The platform strengthened the project’s premium brand image and helped position the resort as both a lifestyle destination and a compelling investment opportunity.",
+    meta: {
+      type: "Resort Website",
+      industry: "Hospitality & Real Estate",
+      timeline: "4 weeks",
+    },
+    tools: ["Next.js", "Shadcn UI", "Tailwind CSS", "Express.js", "MongoDB"],
+    liveUrl: "https://aquavistabd.com",
+  },
+  {
+    _id: "660f1a2b3c4d5e6f7a8b9c02",
+    slug: "gadgetoria-hub",
+    title: "Gadgetoria Hub - Full-Stack E-commerce Platform",
+    category: "website",
+    summary:
+      "Scalable online store with a full customer shopping experience and a powerful admin dashboard for store operations.",
+    thumbnail: "/images/projects/gadgetoria.png",
+    // videoUrl: "",
+    challenge:
+      "The goal was to build a complete e-commerce system that handled both customer-facing shopping flows and complex admin operations such as product, category, order, and review management.",
+    solution:
+      "Built a full-stack commerce platform with a modern storefront, advanced product discovery tools, secure authentication, and a dashboard for managing products, orders, categories, users, and analytics in one streamlined system.",
+    features: [
+      "Responsive storefront with search, cart, and wishlist",
+      "Advanced filtering, sorting, and paginated product browsing",
+      "Product details with reviews and recommendations",
+      "Coupon-enabled checkout and order flow",
+      "Admin dashboard with charts, CRUD tools, and order management",
+    ],
+    result:
+      "The project delivered a production-style shopping experience backed by efficient store management tools, making it suitable for real-world e-commerce operations and future scaling.",
+    meta: {
+      type: "E-commerce Platform",
+      industry: "Retail & Online Shopping",
+      timeline: "5 weeks",
+    },
+    tools: ["Next.js", "Shadcn UI", "Node.js", "Express.js", "MongoDB"],
+    liveUrl: "https://gadgetoria.vercel.app",
+  },
+  {
     _id: "660f1a2b3c4d5e6f7a8b9c05",
     slug: "messenger-ai-agent",
     title: "Facebook Messenger AI Agent - Customer Support & Lead",
@@ -33,34 +175,34 @@ export const projects = [
     tools: ["n8n", "AI Automation", "Graph API", "Workflow Automation", "AI"],
   },
   {
-    _id: "660f1a2b3c4d5e6f7a8b9c02",
-    slug: "gadgetoria-hub",
-    title: "Gadgetoria Hub - Full-Stack E-commerce Platform",
+    _id: "660f1a2b3c4d5e6f7a8b9c01",
+    slug: "agency-cope",
+    title: "Agency Cope - Creative Digital Agency Website",
     category: "website",
     summary:
-      "Scalable online store with a full customer shopping experience and a powerful admin dashboard for store operations.",
-    thumbnail: "/images/projects/gadgetoria.png",
-    // videoUrl: "",
+      "Modern agency website built to showcase services, portfolio, team, and trust-building content with polished interactions.",
+    thumbnail: "/images/projects/agency-cope.png",
+    // videoUrl: "https://www.youtube.com/embed/A2NqIew9Pzo?autoplay=1",
     challenge:
-      "The goal was to build a complete e-commerce system that handled both customer-facing shopping flows and complex admin operations such as product, category, order, and review management.",
+      "The agency needed a strong digital presence that could present its services, team, projects, and brand credibility in a modern, conversion-focused way while keeping the experience smooth across devices.",
     solution:
-      "Built a full-stack commerce platform with a modern storefront, advanced product discovery tools, secure authentication, and a dashboard for managing products, orders, categories, users, and analytics in one streamlined system.",
+      "Developed a responsive React-based agency website with structured service pages, project showcases, testimonial sections, interactive inquiry flows, and motion-driven UI to create a premium and engaging browsing experience.",
     features: [
-      "Responsive storefront with search, cart, and wishlist",
-      "Advanced filtering, sorting, and paginated product browsing",
-      "Product details with reviews and recommendations",
-      "Coupon-enabled checkout and order flow",
-      "Admin dashboard with charts, CRUD tools, and order management",
+      "Modern homepage with service, team, and testimonial sections",
+      "Portfolio page with category-based project filtering",
+      "Service inquiry flow with Email.js integration",
+      "Meeting booking integration via cal.com",
+      "Smooth page interactions with Framer Motion",
     ],
     result:
-      "The project delivered a production-style shopping experience backed by efficient store management tools, making it suitable for real-world e-commerce operations and future scaling.",
+      "The final platform gave the agency a more professional online identity, improved how services and projects were presented, and created clearer paths for potential clients to get in touch.",
     meta: {
-      type: "E-commerce Platform",
-      industry: "Retail & Online Shopping",
-      timeline: "5 weeks",
+      type: "Agency Website",
+      industry: "Digital Agency",
+      timeline: "3 weeks",
     },
-    tools: ["Next.js", "Shadcn UI", "Node.js", "Express.js", "MongoDB"],
-    liveUrl: "https://gadgetoria.vercel.app",
+    tools: ["React", "Tailwind CSS", "Framer Motion", "Email.js", "Cal.com"],
+    liveUrl: "https://agencycope.com",
   },
   {
     _id: "660f1a2b3c4d5e6f7a8b9c06",
@@ -92,66 +234,6 @@ export const projects = [
       timeline: "1–2 weeks",
     },
     tools: ["n8n", "AI Automation", "Workflow", "Custom Chat Integration"],
-  },
-  {
-    _id: "660f1a2b3c4d5e6f7a8b9c01",
-    slug: "agency-cope",
-    title: "Agency Cope - Creative Digital Agency Website",
-    category: "website",
-    summary:
-      "Modern agency website built to showcase services, portfolio, team, and trust-building content with polished interactions.",
-    thumbnail: "/images/projects/agency-cope.png",
-    // videoUrl: "https://www.youtube.com/embed/A2NqIew9Pzo?autoplay=1",
-    challenge:
-      "The agency needed a strong digital presence that could present its services, team, projects, and brand credibility in a modern, conversion-focused way while keeping the experience smooth across devices.",
-    solution:
-      "Developed a responsive React-based agency website with structured service pages, project showcases, testimonial sections, interactive inquiry flows, and motion-driven UI to create a premium and engaging browsing experience.",
-    features: [
-      "Modern homepage with service, team, and testimonial sections",
-      "Portfolio page with category-based project filtering",
-      "Service inquiry flow with Email.js integration",
-      "Meeting booking integration via cal.com",
-      "Smooth page interactions with Framer Motion",
-    ],
-    result:
-      "The final platform gave the agency a more professional online identity, improved how services and projects were presented, and created clearer paths for potential clients to get in touch.",
-    meta: {
-      type: "Agency Website",
-      industry: "Digital Agency",
-      timeline: "3 weeks",
-    },
-    tools: ["React", "Tailwind CSS", "Framer Motion", "Email.js", "Cal.com"],
-    liveUrl: "https://agencycope.com",
-  },
-  {
-    _id: "660f1a2b3c4d5e6f7a8b9c03",
-    slug: "aquavista-resort",
-    title: "AquaVista Resort - Luxury Resort & Investment Website",
-    category: "website",
-    summary:
-      "High-end resort website designed to present lifestyle value, premium facilities, and ownership-driven investment opportunities.",
-    thumbnail: "/images/projects/aquavista.png",
-    // videoUrl: "",
-    challenge:
-      "The client needed a visually premium website that could balance luxury resort branding with persuasive investment messaging, while helping potential buyers understand facilities, ownership plans, and long-term value.",
-    solution:
-      "Created a polished multi-page website that highlights the resort’s riverside location, luxury amenities, rooftop experience, ownership plans, and inquiry paths through a conversion-focused content structure.",
-    features: [
-      "Luxury landing page with investment-focused messaging",
-      "Dedicated pages for facilities, rooftop, gallery, and ownership plans",
-      "Lead-generation sections placed across key pages",
-      "Visual storytelling for lifestyle and location value",
-      "Contact and consultation flow with map-based location access",
-    ],
-    result:
-      "The platform strengthened the project’s premium brand image and helped position the resort as both a lifestyle destination and a compelling investment opportunity.",
-    meta: {
-      type: "Resort Website",
-      industry: "Hospitality & Real Estate",
-      timeline: "4 weeks",
-    },
-    tools: ["Next.js", "Shadcn UI", "Tailwind CSS", "Express.js", "MongoDB"],
-    liveUrl: "https://aquavistabd.com",
   },
   {
     _id: "660f1a2b3c4d5e6f7a8b9c04",
