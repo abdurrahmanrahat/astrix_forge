@@ -1,8 +1,8 @@
 export const projects = [
   {
     _id: "660f1a2b3c4d5e6f7a8b9c06",
-    slug: "ai-voice-agent-booking-system",
-    title: "AI Voice Agent with Smart Booking, Lead Capture & Follow-up System",
+    slug: "ai-voice-agent-booking-follow-up",
+    title: "AI Voice Agent with Booking, Lead Capture & Follow-up",
     category: "ai-agent",
     summary:
       "AI-powered voice automation system that answers customer queries, captures leads, books appointments, and triggers follow-up workflows automatically.",
@@ -42,8 +42,8 @@ export const projects = [
   },
   {
     _id: "660f1a2b3c4d5e6f7a8b9c07",
-    slug: "ai-lead-generation-outreach-system",
-    title: "AI Lead Generation, Data Enrichment & Automated Outreach System",
+    slug: "ai-lead-generation-outreach",
+    title: "AI Lead Generation, Data Enrichment & Automated Outreach",
     category: "automation",
     summary:
       "Automated lead generation and outreach system that collects business leads, enriches data, generates personalized proposals with AI, and sends outreach emails automatically.",

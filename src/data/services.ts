@@ -69,7 +69,11 @@ export const services: TService[] = [
       "Zapier",
       "Make",
     ],
-    relatedProjects: ["messenger-ai-agent", "website-ai-chat-agent"],
+    relatedProjects: [
+      "ai-lead-generation-outreach",
+      "messenger-ai-agent",
+      "website-ai-chat-agent",
+    ], // slugs
   },
   {
     slug: "ai-agents-voice-and-llm",
@@ -129,7 +133,10 @@ export const services: TService[] = [
       },
     ],
     tools: ["LangChain", "Voice AI", "LLM", "Custom Agents", "OpenAI", "RAG"],
-    relatedProjects: [],
+    relatedProjects: [
+      "ai-voice-agent-booking-follow-up",
+      "ai-lead-generation-outreach",
+    ],
   },
   {
     slug: "development",
