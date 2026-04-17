@@ -1,7 +1,7 @@
 export const projects = [
   {
     _id: "660f1a2b3c4d5e6f7a8b9c07",
-    slug: "ghl-coaches-consultation-system",
+    slug: "ghl-coaches-consultation-booking-system",
     title: "GoHighLevel Automation System for Coaches & Consultants",
     category: "automation",
     summary:
