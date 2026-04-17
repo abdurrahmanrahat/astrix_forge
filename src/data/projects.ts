@@ -1,5 +1,45 @@
 export const projects = [
   {
+    _id: "660f1a2b3c4d5e6f7a8b9c07",
+    slug: "ghl-coaches-consultation-system",
+    title: "GoHighLevel Automation System for Coaches & Consultants",
+    category: "automation",
+    summary:
+      "Complete GoHighLevel system that captures leads, nurtures them, books appointments, and automates follow-ups with AI and workflows.",
+    thumbnail: "/images/projects/business-consultations-banner.png",
+    videoUrl: "https://www.youtube.com/embed/n4QYkmh1Ryo?si=WoN7unqP62dddREn",
+    isVideoMobileRecording: false,
+    challenge:
+      "Coaches and consultants were losing leads due to slow responses, unstructured follow-ups, and lack of a centralized system to manage inquiries, bookings, and conversations efficiently.",
+    solution:
+      "Built a complete GoHighLevel automation system with a high-converting funnel, structured CRM pipeline, automated follow-ups, booking system, and AI chat assistant to capture, nurture, and convert leads seamlessly.",
+    features: [
+      "High-converting funnel (Lead capture → Booking flow)",
+      "Custom CRM pipeline for lead tracking (New Lead → Closed)",
+      "Automated email follow-ups and reminder sequences",
+      "Integrated booking system with calendar scheduling",
+      "AI chat assistant for website and Facebook message handling",
+      "Centralized Conversations inbox for lead communication",
+      "Basic tracking system for leads, bookings, and conversions",
+    ],
+    result:
+      "The system enabled automated lead capture, consistent follow-ups, and streamlined booking processes, helping increase conversion rates while eliminating manual lead chasing and missed opportunities.",
+    meta: {
+      type: "CRM Automation",
+      industry: "Coaching & Consulting",
+      timeline: "1–2 weeks",
+    },
+    tools: [
+      "GoHighLevel",
+      "Workflows & Automations",
+      "CRM Pipeline",
+      "Calendar Booking",
+      "AI Chat Widget",
+      "Facebook Integration",
+      "Email Automation",
+    ],
+  },
+  {
     _id: "660f1a2b3c4d5e6f7a8b9c06",
     slug: "ai-voice-agent-booking-follow-up",
     title: "AI Voice Agent with Booking, Lead Capture & Follow-up",
@@ -38,6 +78,48 @@ export const projects = [
       "Webhooks",
       "API Integrations",
       "AI",
+    ],
+  },
+  {
+    _id: "660f1a2b3c4d5e6f7a8b9c07",
+    slug: "social-media-posting-automation-system",
+    title: "Social Media Posting Automation System",
+    category: "automation",
+    summary:
+      "AI-powered social media automation system that prepares content, generates images, publishes posts across multiple platforms, updates tracking sheets, and sends low-content alerts automatically.",
+    thumbnail: "/images/projects/social_media_post_with_content_creation.png",
+    videoUrl: "https://www.youtube.com/embed/mPHYl7xkuFk?si=bbyGGx7jiWy3cwa7",
+    isVideoMobileRecording: false,
+    challenge:
+      "Businesses were spending too much time managing social media manually, struggling with inconsistent posting, duplicate content, messy tracking, and delays in preparing new posts when the content pipeline ran low.",
+    solution:
+      "Developed an n8n-powered social media automation system that reads unpublished content from Google Sheets, uses AI to refine post copy, generates images automatically, publishes content across LinkedIn, Facebook, Instagram, and other platforms, then updates the sheet with publish status and timestamp while preventing duplicate posting. A second workflow monitors remaining unpublished posts and sends Telegram alerts when content drops below a defined limit.",
+    features: [
+      "Automatic content pickup from Google Sheets",
+      "AI-generated or AI-refined post captions",
+      "Automatic image generation for each post",
+      "Multi-platform publishing from one workflow",
+      "Publish status and timestamp update in Google Sheets",
+      "Duplicate-post prevention logic",
+      "Telegram alerts for low unpublished content",
+      "Centralized content tracking and workflow automation",
+    ],
+    result:
+      "The system helped streamline social media operations by reducing manual work, improving posting consistency, centralizing content management, minimizing publishing errors, and ensuring teams never ran out of scheduled content without warning.",
+    meta: {
+      type: "Social Media Automation",
+      industry: "Marketing Automation",
+      timeline: "1–2 weeks",
+    },
+    tools: [
+      "n8n",
+      "OpenAI",
+      "AI Image Generation",
+      "LinkedIn API",
+      "Facebook API",
+      "Instagram API",
+      "Telegram",
+      "Google Sheets",
     ],
   },
   {

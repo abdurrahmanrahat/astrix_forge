@@ -70,6 +70,8 @@ export const services: TService[] = [
       "Make",
     ],
     relatedProjects: [
+      "ghl-coaches-consultation-system",
+      "social-media-posting-automation-system",
       "ai-lead-generation-outreach",
       "messenger-ai-agent",
       "website-ai-chat-agent",
@@ -134,6 +136,7 @@ export const services: TService[] = [
     ],
     tools: ["LangChain", "Voice AI", "LLM", "Custom Agents", "OpenAI", "RAG"],
     relatedProjects: [
+      "ghl-coaches-consultation-system",
       "ai-voice-agent-booking-follow-up",
       "ai-lead-generation-outreach",
     ],
