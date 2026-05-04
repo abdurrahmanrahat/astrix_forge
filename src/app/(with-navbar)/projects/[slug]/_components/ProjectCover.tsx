@@ -9,12 +9,13 @@ const ProjectCover = ({
 }) => {
   return (
     <div className="overflow-hidden rounded-lg">
-      <div className="relative aspect-video max-w-[940px] mx-auto bg-muted">
+      <div className="max-w-[940px] mx-auto bg-muted">
         <Image
           src={thumbnail}
           alt={title}
-          fill
-          className="object-cover object-top"
+          width={1200}
+          height={800}
+          className="w-full h-auto"
           priority
         />
       </div>
