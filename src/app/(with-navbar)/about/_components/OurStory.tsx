@@ -20,7 +20,7 @@ export default function OurStory() {
           <div className="gradient-border rounded-lg p-5 md:p-7">
             <div className="mb-4">
               <Image
-                src="/images/about/team.jpg"
+                src="/images/about/team-meeting.jpg"
                 alt="team"
                 width={500}
                 height={400}

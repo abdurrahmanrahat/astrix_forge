@@ -70,10 +70,11 @@ export const services: TService[] = [
       "Make",
     ],
     relatedProjects: [
-      "ghl-coaches-automation-system",
+      "ghl-hvac-automation-system",
       "whatsapp-ai-agent-with-appointment-booking",
-      "ghl-real-estate-lead-automation-system",
+      "ghl-coaches-automation-system",
       "social-media-posting-automation-system",
+      "ghl-dental-clinic-automation-system",
       "ai-lead-generation-outreach",
     ], // slugs
   },
@@ -137,8 +138,8 @@ export const services: TService[] = [
     tools: ["LangChain", "Voice AI", "LLM", "Custom Agents", "OpenAI", "RAG"],
     relatedProjects: [
       "whatsapp-ai-agent-with-appointment-booking",
-      "social-media-posting-automation-system",
       "ai-voice-agent-booking-follow-up",
+      "social-media-posting-automation-system",
       "ai-lead-generation-outreach",
     ],
   },

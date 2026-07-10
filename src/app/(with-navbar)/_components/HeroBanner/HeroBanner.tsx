@@ -87,9 +87,9 @@ export default function HeroBanner() {
               </span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl font-heading font-bold text-foreground leading-[1.1] mb-5">
-              Build AI Systems That{" "}
-              <span className="text-gradient">Automate</span> Your Business
+            <h1 className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-heading font-bold text-foreground leading-[1.1] mb-5">
+              Replace <span className="text-gradient">30+ Hours</span> of Manual
+              Work Every Week with AI Automation
             </h1>
 
             <p className="text-muted-foreground mb-8 max-w-xl text-base leading-[25px] sm:text-[17px] 2xl:text-lg">
